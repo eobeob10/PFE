@@ -1,0 +1,6 @@
+ 22/ssh
+ 80/http
+ 2000/tcpwrapped
+ 3306/mysql
+ 5060/tcpwrapped
+ 8081/http

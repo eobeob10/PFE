@@ -1,0 +1,10 @@
+# Nmap 7.92 scan initiated Wed May  4 18:53:37 2022 as: nmap -sS -sV -p 5060,2000,3306,80,8081,22 --script=ssl-heartbleed167.86.79.22 -oN heartbleed-167.86.79.22-5060,2000,3306,80,8081,22.txt
+NSE: failed to initialize the script engine:
+/usr/bin/../share/nmap/nse_main.lua:822: 'ssl-heartbleed167.86.79.22' did not match a category, filename, or directory
+stack traceback:
+	[C]: in function 'error'
+	/usr/bin/../share/nmap/nse_main.lua:822: in local 'get_chosen_scripts'
+	/usr/bin/../share/nmap/nse_main.lua:1322: in main chunk
+	[C]: in ?
+
+QUITTING!

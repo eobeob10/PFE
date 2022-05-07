@@ -1,0 +1,7 @@
+200 OK
+Cache-Control: no-cache
+Date: Wed, 05 Jan 2000 04:51:08 GMT
+Connection: Keep-Alive
+Content-Type: text/html
+Content-Length: 12250
+Retry-Count: 0

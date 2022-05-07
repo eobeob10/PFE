@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+{% load static %}
+{% include 'navbar.html' %}
+
+
+{% block content %}
+{% if request.user == Scan.user %}
+<a href="{ url 'delete-Activity' Activity.id %}">Delete </a>
+{% endif %}
+
+<small>@{{Scan.user}} {{Scan.created|timesince }} </small>
+<p>{{Scan.body}}</p>
+<hr>

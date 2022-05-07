@@ -1,0 +1,19 @@
+import nmap 
+import sys 
+
+class NETWOR_ENUM 
+    def __init_(self):
+    #default gateway 
+    dgate = input ("enter default gateway to scan : ")
+    subnet= int(input("Enter subnet mask :/"))
+    self.subnet = subnet 
+
+    def host_discovery(self):
+        if len(self.dgate)> 15 or self.subnet >3:
+            sys.exit(0)
+        else
+            network = self.dgate + "/" +str(self.subnet)
+            print ("+Scanning network for available hosts...")
+            #nmap object
+            nm = nmap.PortScanner()
+            

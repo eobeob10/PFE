@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Django</title>
+    <meta name=Django content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
+<form method="post" enctype="multipart/form-data">
+    {%csrf_token%}
+    <br>
+    <input Type="file">
+    <br />
+    <input type="text" />
+    <br>
+    <input class="button1" type="submit" value="submit"></button>
+</form>
+{% if uploaded_file_url %}
+<p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+{% endif %}
+<script src="" async defer></script>

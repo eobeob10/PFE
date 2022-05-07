@@ -1,0 +1,24 @@
+[[36m2022-04-22 14:05:32[0m] [[92mnginx-version[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22 [[96mnginx/1.18.0 (Ubuntu)[0m]
+[[36m2022-04-22 14:05:32[0m] [[92mtech-detect[0m:[1;92mnginx[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:05:32[0m] [[92mtech-detect[0m:[1;92mgoogle-font-api[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:05:38[0m] [[92mmongodb-detect[0m] [[94mnetwork[0m] [[34minfo[0m] 167.86.79.22:27017
+[[36m2022-04-22 14:05:38[0m] [[92mmongodb-detect[0m] [[94mnetwork[0m] [[34minfo[0m] 167.86.79.22:27017
+[[36m2022-04-22 14:06:05[0m] [[92mwaf-detect[0m:[1;92mnginxgeneric[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22/
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92maccess-control-expose-headers[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92maccess-control-max-age[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92mclear-site-data[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92mx-content-type-options[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92mpermission-policy[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92mx-frame-options[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92mx-permitted-cross-domain-policies[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92mreferrer-policy[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92mcross-origin-resource-policy[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-origin[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92mstrict-transport-security[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92mcross-origin-embedder-policy[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92mcross-origin-opener-policy[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-credentials[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92maccess-control-allow-methods[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:05[0m] [[92mhttp-missing-security-headers[0m:[1;92mcontent-security-policy[0m] [[94mhttp[0m] [[34minfo[0m] http://167.86.79.22
+[[36m2022-04-22 14:06:13[0m] [[92mptr-fingerprint[0m] [[94mdns[0m] [[34minfo[0m] 167.86.79.22 [[96mvmi782615.contaboserver.net.[0m]
+[[36m2022-04-22 14:06:13[0m] [[92mptr-fingerprint[0m] [[94mdns[0m] [[34minfo[0m] http://167.86.79.22 [[96mvmi782615.contaboserver.net.[0m]

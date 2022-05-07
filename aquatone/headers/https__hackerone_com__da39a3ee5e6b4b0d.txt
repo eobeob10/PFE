@@ -1,0 +1,36 @@
+200 OK
+X-Generator: Drupal 9 (https://www.drupal.org)
+X-Served-By: cache-mdw17335-MDW, cache-mxp6970-MXP
+Via: 1.1 varnish, 1.1 varnish
+Expect-Ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+Date: Thu, 14 Apr 2022 00:46:16 GMT
+Content-Security-Policy: default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src blob: js.driftt.com *.youtube-nocookie.com *.marketo.com; connect-src 'self' *.6sc.co *.6sense.com *.adnxs.com *.company-target.com *.google-analytics.com *.litix.io *.bugsnag.com *.bugherd.com *.pusher.com bugherd-attachments.s3.amazonaws.com *.mktoresp.com *.mktoutil.com *.stripe.com *.wistia.com *.wistia.net s3.amazonaws.com api.lever.co embedwistia-a.akamaihd.net hackerone.com secure.adnxs.com stats.g.doubleclick.net; font-src 'self' data: fonts.gstatic.com *.bugherd.com *.trustarc.com d2iiunr5ws5ch1.cloudfront.net *.typekit.net; form-action 'self' *.marketo.com *.twitter.com; frame-ancestors 'self'; frame-src 'self' fast.wistia.com js.driftt.com *.trustarc.com *.vimeo.com *.youtube.com *.youtube-nocookie.com *.marketo.com *.twitter.com *.wistia.net my.pima.app; object-src 'self'; img-src 'self' data: *.6sc.co *.adsymptotic.com *.bidr.io *.company-target.com *.google-analytics.com *.google.com *.linkedin.com *.techtarget.com *.trustarc.com *.twimg.com *.twitter.com *.wistia.net s3.amazonaws.com bugherd-attachments.s3.amazonaws.com d2iiunr5ws5ch1.cloudfront.net cdn.bizible.com cdn.bizibly.com cdn.ttgtmedia.com embed-fastly.wistia.com embedwistia-a.akamaihd.net fast.wistia.com id.rlcdn.com stats.g.doubleclick.net t.co via.placeholder.com https://*.googletagmanager.com; media-src 'self' blob: data: *.wistia.com *.wistia.net *.driftt.com *.trustarc.com s3.amazonaws.com embedwistia-a.akamaihd.net; script-src 'self' 'sha256-/k3Lky8OmuiUX6COqMxH79YVPvcq2c55gd/HqG7lsi0=' 'sha256-/W/QtVcR7XvpCfSPHfAe43UyCWy04ArWn3esUvwLQus=' 'sha256-4ogSPhBj5gyjxtI/kkTjyHlW/2tNk4FLetX3+ik9fPs=' 'sha256-8+M6mWeVaqvmXQr6ICEeK1L8fOvFp6I+bpTpkYePz0Q=' 'sha256-beC9gSgoOLBjF6WPV9h2TG/2KJvbVTctAxQ9MTMyYbk=' 'sha256-chw1FVji+ddLlO/RrcP3fhKOLsJUUh+FaKbjsOC2BiQ=' 'sha256-D6d37gZGDMRuNu3bDdYkGuOfCaaNGdTrB3eF5d5IU/Y=' 'sha256-dhwFhekPShnrWyiAriTpQlTCTxncYNMFjKcntiike8M=' 'sha256-evOIAQWlBJQ+3KMf/PHqxrFNdU5DSFFYTRb4ZcJL6jk=' 'sha256-f6kiKh1SZ2YHiwRvz1V5iix64hzoUnhgzc5t0kOcNmM=' 'sha256-fUPVzBO4Mo+NL5cVHRBbgZhsv1LF+vvQppJWvNHOPvA=' 'sha256-GIzg/vN5a9TbTavbaC/fu8ZDVJriAcj3NVOm9O9Ez7g=' 'sha256-hU4B0G69nqzy1PZ5Jda591+j5XhFOmWiX9q0zyoaMsY=' 'sha256-irDgLiTAwy41TBlsEthM8ACkswOyhizqioTpKoO+wXQ=' 'sha256-njEVDP22SRLTbvkBGYBk/bZxj3vsHZe/TM7+ykFIPtk=' 'sha256-pJ/Sj6gFFfUZXctm6johubVrAxMvdI1SMAA5/eytCPk=' 'sha256-pRMbUhnw0qjc6R64b23mwCtKdCF6fTKAYnukOH7ZzOw=' 'sha256-R9nryxYNh8QqhbOdCyNECNNMpbroEdPW9unTJqjDCAo=' 'sha256-sviMEnruQvgRGHgNssyqhuvNs7UBpfTCxN6U68FQFDM=' 'sha256-U3ZWizlkvaRmvQF3MnSSKIn0f49Urg9BnkLN+HkjGx8=' 'sha256-vNzhrX6x5GlHLXla0JcTAz/xTWTR/QYzGMg/4FvTF4E=' 'sha256-xk5ZshhV7kpsmwuy/gzaK0piBHyRHg66QcZJYEWE7EI=' 'sha256-XrP50Mq6s78GLH2Vyt4BfKhn8rx4OdU6FYqQGbxRuZc=' 'sha256-4sNwvmWshEzqW5S25HVAak+QIUCkjYSbAaQ7Ieh/EDA=' 'sha256-vAVeEsxCCrkKn3kdxDRPzaYK3mla+jSTnrGwCq/ApJk=' 'sha256-zakVdM0lUDwY/4h92l5vwR9OF5iDvSV2P1t2I+pqAdg=' 'sha256-7j/6kZ0M/5sjXRduONqbE2Hj/QJJHQwF6uV9sH3Q4ck=' *.6sc.co *.ads-twitter.com *.ads-twitter.com *.bred4tula.com *.bugherd.com *.cloudflare.com *.demandbase.com *.google-analytics.com *.jsdelivr.net *.linkedin.com *.marketo.com *.techtarget.com *.trustarc.com *.truste.com *.twitter.com cdn.bizible.com cdn.syndication.twimg.com d2iiunr5ws5ch1.cloudfront.net d2wy8f7a9ursnm.cloudfront.net fast.wistia.com fast.wistia.net js.driftt.com munchkin.marketo.net s3.amazonaws.com snap.licdn.com unpkg.com https://*.googletagmanager.com; style-src 'self' 'unsafe-inline' *.twitter.com *.jsdelivr.net *.marketo.com s3.amazonaws.com checkout.stripe.com fast.wistia.com fast.wistia.net fonts.googleapis.com *.typekit.net d2iiunr5ws5ch1.cloudfront.net; report-uri https://errors.hackerone.net/api/30/csp-report/?sentry_key=61c1e2f50d21487c97a071737701f598
+X-Pantheon-Styx-Hostname: styx-fe1-b-5d95f46cd8-6nsp7
+X-Styx-Req-Id: 3d643af6-bb61-11ec-90ed-02656524402a
+Vary: Accept-Encoding, Cookie, Cookie, Cookie
+Retry-Count: 0
+Content-Language: en
+X-Content-Type-Options: nosniff
+X-Timer: S1649879105.803902,VS0,VE2
+Permissions-Policy: interest-cohort=()
+X-Drupal-Cache: MISS
+Cache-Control: public, max-age=2678400
+Last-Modified: Wed, 13 Apr 2022 19:38:05 GMT
+Link: <https://www.hackerone.com/>; rel="canonical", <https://www.hackerone.com/>; rel="shortlink" <https://www.hackerone.com/>; rel="alternate"; hreflang="en" <https://www.hackerone.com/history-of-hacker-powered-security>; rel="revision"
+X-Drupal-Dynamic-Cache: MISS
+X-Ua-Compatible: IE=edge
+X-Xss-Protection: 1; mode=block
+X-Cache-Hits: 1, 1
+Accept-Ranges: bytes
+Content-Type: text/html; charset=UTF-8
+Traceparent: 00-b42bc78418514a43abfc13f7995ac6d7-b74c726f621f50db-00
+X-Cloud-Trace-Context: b42bc78418514a43abfc13f7995ac6d7/13208057629883977947;o=0
+Cf-Ray: 6fb86c6a3a54e918-MRS
+Etag: W/"1649878685"
+Expires: Sun, 15 May 2022 00:46:16 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Age: 320
+Cf-Cache-Status: HIT
+X-Frame-Options: DENY
+X-Cache: HIT, HIT

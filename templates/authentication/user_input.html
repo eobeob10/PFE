@@ -1,0 +1,51 @@
+{% load static %}
+
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+        <form action="{% url 'createScan'} " name="scan_f" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="cmp-tb-hd cmp-int-hd">
+                <h2>New Scan</h2>
+            </div>
+            <div class="form-example-int form-horizental">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                            <label class="hrzn-fm">Scan Name</label>
+                        </div>
+                        <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                            <div class="nk-int-st">
+                                <input name="name" type="text" class="form-control input-sm" placeholder="Enter a Name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                            <label class="hrzn-fm">Choose a file</label>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="custom-file">
+                                <input name="file" type="file" class="custom-file-input" id="validatedCustomFile"
+                                    required>
+                                <label class="custom-file-label" for="validatedCustomFile"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-2 col-md-3 col-sm-3 col-xs-12">
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-sm-7 col-xs-12">
+                        <button class="btn btn-success notika-btn-success">Create</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>

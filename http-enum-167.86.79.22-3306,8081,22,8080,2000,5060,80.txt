@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Fri Apr 22 14:05:19 2022 as: nmap -Pn -p 3306,8081,22,8080,2000,5060,80 --script http-enum -oG http-enum-167.86.79.22-3306,8081,22,8080,2000,5060,80.txt 167.86.79.22
+Host: 167.86.79.22 (vmi782615.contaboserver.net)	Status: Up
+Host: 167.86.79.22 (vmi782615.contaboserver.net)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 2000/open/tcp//cisco-sccp///, 3306/open/tcp//mysql///, 5060/open/tcp//sip///, 8080/open/tcp//http-proxy///, 8081/open/tcp//blackice-icecap///
+# Nmap done at Fri Apr 22 14:07:17 2022 -- 1 IP address (1 host up) scanned in 118.84 seconds

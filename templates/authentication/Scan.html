@@ -1,0 +1,12 @@
+{% for Scan in scan_list %}
+<div>
+
+    {%if request.user == Scan.user %}
+    <a href="{ url 'delete-Activity' Activity.id %}">Delete </a>
+    {% end if %}
+
+    <small>@{{Scan.user}} {{Scan.created|timesince }} </small>
+    <p>{{Scan.body}}</p>
+    <hr>
+</div>
+{% end for %}

@@ -1,0 +1,5 @@
+hackerone.com:8080
+hackerone.com:8443
+hackerone.com:80
+192.168.1.13:5357
+192.168.1.1:53

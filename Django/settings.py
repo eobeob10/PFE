@@ -41,14 +41,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'authentication',
-    'scans',
+    # 'scans',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -57,6 +57,7 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'Django.urls'
 
 ALLOWED_HOSTS = [
+
     '172.27.176.131',
     '127.0.0.1'
 ]
@@ -72,6 +73,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -86,14 +88,15 @@ WSGI_APPLICATION = 'Django.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'Users',
+        'NAME': 'mainDB',
         'HOST': 'localhost',
-        'USER': 'root',
-        'PASSWORD': 'gue55me',
-        'PORT': "3306",
+        'USER': 'nour',
+        'PASSWORD': 'Root@123*$',
+        'PORT': "33006",
+        'HOST': '151.80.174.9',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
+        },
     }
 }
 
@@ -130,8 +133,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+MEDIA_URL = 'media/'
 
 STATIC_ROOT = 'C:/Users/Nour Abdessalem/Desktop/Django/'
 
