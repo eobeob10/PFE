@@ -3,283 +3,270 @@
 + Target IP:          167.86.79.22
 + Target Hostname:    167.86.79.22
 + Target Port:        80
-+ Start Time:         2022-05-04 18:55:23 (GMT1)
++ Start Time:         2022-05-29 12:18:20 (GMT0)
 ---------------------------------------------------------------------------
 + Server: nginx/1.18.0 (Ubuntu)
 + The anti-clickjacking X-Frame-Options header is not present.
 + The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
 + The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
 + No CGI Directories found (use '-C all' to force check all possible dirs)
-+ /167_86_79_22.jks: Potentially interesting archive/cert file found.
-+ /167_86_79_22.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.tgz: Potentially interesting archive/cert file found.
-+ /167.86.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.pem: Potentially interesting archive/cert file found.
-+ /167.86.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /86.tar: Potentially interesting archive/cert file found.
-+ /86.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.jks: Potentially interesting archive/cert file found.
-+ /167.86.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.22.alz: Potentially interesting archive/cert file found.
-+ /167.86.79.22.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167867922.jks: Potentially interesting archive/cert file found.
-+ /167867922.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /16786.egg: Potentially interesting archive/cert file found.
-+ /16786.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.pem: Potentially interesting archive/cert file found.
-+ /167.86.79.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /79.jks: Potentially interesting archive/cert file found.
-+ /79.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.cer: Potentially interesting archive/cert file found.
-+ /167.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /22.tar.bz2: Potentially interesting archive/cert file found.
-+ /22.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /site.tar.bz2: Potentially interesting archive/cert file found.
-+ /site.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /22.tar.lzma: Potentially interesting archive/cert file found.
-+ /22.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.alz: Potentially interesting archive/cert file found.
++ /167.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /16786.cer: Potentially interesting archive/cert file found.
++ /16786.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.tgz: Potentially interesting archive/cert file found.
++ /backup.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /16786.tar.bz2: Potentially interesting archive/cert file found.
++ /16786.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.egg: Potentially interesting archive/cert file found.
++ /site.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
 + /167.war: Potentially interesting archive/cert file found.
 + /167.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.war: Potentially interesting archive/cert file found.
-+ /167.86.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.pem: Potentially interesting archive/cert file found.
-+ /167.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167867922.tgz: Potentially interesting archive/cert file found.
-+ /167867922.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.22.jks: Potentially interesting archive/cert file found.
-+ /167.86.79.22.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167_86_79_22.alz: Potentially interesting archive/cert file found.
-+ /167_86_79_22.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /site.tar: Potentially interesting archive/cert file found.
-+ /site.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /16786.war: Potentially interesting archive/cert file found.
-+ /16786.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /1678679.alz: Potentially interesting archive/cert file found.
-+ /1678679.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167_86_79_22.war: Potentially interesting archive/cert file found.
++ /167_86_79_22.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /86.tar: Potentially interesting archive/cert file found.
++ /86.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /86.tgz: Potentially interesting archive/cert file found.
++ /86.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /86.tar.lzma: Potentially interesting archive/cert file found.
++ /86.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.22.egg: Potentially interesting archive/cert file found.
++ /167.86.79.22.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1678679.tar.bz2: Potentially interesting archive/cert file found.
++ /1678679.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.cer: Potentially interesting archive/cert file found.
++ /167.86.79.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /22.pem: Potentially interesting archive/cert file found.
++ /22.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.egg: Potentially interesting archive/cert file found.
++ /167.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.tgz: Potentially interesting archive/cert file found.
++ /167.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167_86_79_22.jks: Potentially interesting archive/cert file found.
++ /167_86_79_22.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /22.jks: Potentially interesting archive/cert file found.
++ /22.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.22.tgz: Potentially interesting archive/cert file found.
++ /167.86.79.22.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.alz: Potentially interesting archive/cert file found.
++ /167.86.79.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.alz: Potentially interesting archive/cert file found.
++ /167.86.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /16786.tgz: Potentially interesting archive/cert file found.
++ /16786.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.tar.lzma: Potentially interesting archive/cert file found.
++ /167.86.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167_86_79_22.cer: Potentially interesting archive/cert file found.
++ /167_86_79_22.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.war: Potentially interesting archive/cert file found.
++ /167.86.79.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /86.alz: Potentially interesting archive/cert file found.
++ /86.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.jks: Potentially interesting archive/cert file found.
++ /backup.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.tar.lzma: Potentially interesting archive/cert file found.
++ /167.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /16786.tar.lzma: Potentially interesting archive/cert file found.
++ /16786.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.tar: Potentially interesting archive/cert file found.
++ /167.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /79.pem: Potentially interesting archive/cert file found.
++ /79.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.tgz: Potentially interesting archive/cert file found.
++ /site.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /79.jks: Potentially interesting archive/cert file found.
++ /79.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.pem: Potentially interesting archive/cert file found.
++ /167.86.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.22.tar.bz2: Potentially interesting archive/cert file found.
++ /167.86.79.22.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /16786.alz: Potentially interesting archive/cert file found.
++ /16786.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167_86_79_22.pem: Potentially interesting archive/cert file found.
++ /167_86_79_22.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1678679.tgz: Potentially interesting archive/cert file found.
++ /1678679.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.cer: Potentially interesting archive/cert file found.
++ /site.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
 + /167867922.cer: Potentially interesting archive/cert file found.
 + /167867922.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
 + /79.alz: Potentially interesting archive/cert file found.
 + /79.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /86.pem: Potentially interesting archive/cert file found.
-+ /86.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.tar: Potentially interesting archive/cert file found.
-+ /167.86.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.tar.bz2: Potentially interesting archive/cert file found.
-+ /167.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.tar.bz2: Potentially interesting archive/cert file found.
-+ /167.86.79.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167_86_79_22.tar: Potentially interesting archive/cert file found.
-+ /167_86_79_22.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /22.cer: Potentially interesting archive/cert file found.
-+ /22.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /1678679.tgz: Potentially interesting archive/cert file found.
-+ /1678679.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /site.egg: Potentially interesting archive/cert file found.
-+ /site.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /22.tgz: Potentially interesting archive/cert file found.
-+ /22.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /16786.tar: Potentially interesting archive/cert file found.
-+ /16786.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /79.tar: Potentially interesting archive/cert file found.
-+ /79.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /22.egg: Potentially interesting archive/cert file found.
-+ /22.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167867922.pem: Potentially interesting archive/cert file found.
-+ /167867922.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.alz: Potentially interesting archive/cert file found.
-+ /167.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.22.tgz: Potentially interesting archive/cert file found.
-+ /167.86.79.22.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.22.cer: Potentially interesting archive/cert file found.
-+ /167.86.79.22.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.jks: Potentially interesting archive/cert file found.
-+ /167.86.79.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /backup.tar: Potentially interesting archive/cert file found.
-+ /backup.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /22.war: Potentially interesting archive/cert file found.
-+ /22.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /16786.cer: Potentially interesting archive/cert file found.
-+ /16786.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /86.jks: Potentially interesting archive/cert file found.
-+ /86.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /1678679.jks: Potentially interesting archive/cert file found.
-+ /1678679.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167_86_79_22.war: Potentially interesting archive/cert file found.
-+ /167_86_79_22.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /site.tgz: Potentially interesting archive/cert file found.
-+ /site.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.cer: Potentially interesting archive/cert file found.
-+ /167.86.79.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /16786.tar.lzma: Potentially interesting archive/cert file found.
-+ /16786.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167867922.tar.bz2: Potentially interesting archive/cert file found.
-+ /167867922.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /site.pem: Potentially interesting archive/cert file found.
-+ /site.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.22.tar: Potentially interesting archive/cert file found.
-+ /167.86.79.22.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167_86_79_22.cer: Potentially interesting archive/cert file found.
-+ /167_86_79_22.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167_86_79_22.tgz: Potentially interesting archive/cert file found.
-+ /167_86_79_22.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /1678679.cer: Potentially interesting archive/cert file found.
-+ /1678679.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /backup.tgz: Potentially interesting archive/cert file found.
-+ /backup.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /backup.jks: Potentially interesting archive/cert file found.
-+ /backup.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.tgz: Potentially interesting archive/cert file found.
++ /167.86.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
 + /16786.pem: Potentially interesting archive/cert file found.
 + /16786.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /backup.pem: Potentially interesting archive/cert file found.
-+ /backup.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /1678679.egg: Potentially interesting archive/cert file found.
-+ /1678679.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /79.pem: Potentially interesting archive/cert file found.
-+ /79.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /backup.war: Potentially interesting archive/cert file found.
-+ /backup.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /86.alz: Potentially interesting archive/cert file found.
-+ /86.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.22.war: Potentially interesting archive/cert file found.
-+ /167.86.79.22.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.tgz: Potentially interesting archive/cert file found.
-+ /167.86.79.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /backup.tar.lzma: Potentially interesting archive/cert file found.
-+ /backup.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /79.tgz: Potentially interesting archive/cert file found.
-+ /79.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /79.egg: Potentially interesting archive/cert file found.
-+ /79.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /22.tar: Potentially interesting archive/cert file found.
-+ /22.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /1678679.tar.bz2: Potentially interesting archive/cert file found.
-+ /1678679.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167867922.alz: Potentially interesting archive/cert file found.
-+ /167867922.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167_86_79_22.egg: Potentially interesting archive/cert file found.
-+ /167_86_79_22.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.cer: Potentially interesting archive/cert file found.
-+ /167.86.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /79.cer: Potentially interesting archive/cert file found.
-+ /79.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /86.tar.bz2: Potentially interesting archive/cert file found.
-+ /86.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /16786.jks: Potentially interesting archive/cert file found.
-+ /16786.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /16786.alz: Potentially interesting archive/cert file found.
-+ /16786.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /79.war: Potentially interesting archive/cert file found.
-+ /79.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /86.tar.lzma: Potentially interesting archive/cert file found.
-+ /86.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167_86_79_22.pem: Potentially interesting archive/cert file found.
-+ /167_86_79_22.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167867922.tar: Potentially interesting archive/cert file found.
-+ /167867922.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.egg: Potentially interesting archive/cert file found.
-+ /167.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /site.war: Potentially interesting archive/cert file found.
-+ /site.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.tar.lzma: Potentially interesting archive/cert file found.
-+ /167.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.alz: Potentially interesting archive/cert file found.
-+ /167.86.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.egg: Potentially interesting archive/cert file found.
-+ /167.86.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.22.egg: Potentially interesting archive/cert file found.
-+ /167.86.79.22.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167867922.egg: Potentially interesting archive/cert file found.
-+ /167867922.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167867922.tar.lzma: Potentially interesting archive/cert file found.
-+ /167867922.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /22.pem: Potentially interesting archive/cert file found.
-+ /22.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /backup.tar.bz2: Potentially interesting archive/cert file found.
-+ /backup.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.22.pem: Potentially interesting archive/cert file found.
-+ /167.86.79.22.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /1678679.tar.lzma: Potentially interesting archive/cert file found.
-+ /1678679.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167867922.war: Potentially interesting archive/cert file found.
-+ /167867922.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /1678679.tar: Potentially interesting archive/cert file found.
-+ /1678679.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /backup.alz: Potentially interesting archive/cert file found.
-+ /backup.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /86.cer: Potentially interesting archive/cert file found.
-+ /86.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /16786.tgz: Potentially interesting archive/cert file found.
-+ /16786.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.tar: Potentially interesting archive/cert file found.
-+ /167.86.79.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /backup.egg: Potentially interesting archive/cert file found.
-+ /backup.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /86.egg: Potentially interesting archive/cert file found.
-+ /86.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.22.tar.lzma: Potentially interesting archive/cert file found.
-+ /167.86.79.22.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167_86_79_22.tar.bz2: Potentially interesting archive/cert file found.
-+ /167_86_79_22.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /86.tgz: Potentially interesting archive/cert file found.
-+ /86.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.tar.bz2: Potentially interesting archive/cert file found.
-+ /167.86.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.tgz: Potentially interesting archive/cert file found.
-+ /167.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /79.tar.lzma: Potentially interesting archive/cert file found.
-+ /79.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.tar: Potentially interesting archive/cert file found.
-+ /167.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /86.war: Potentially interesting archive/cert file found.
-+ /86.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /22.tgz: Potentially interesting archive/cert file found.
++ /22.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
 + /1678679.war: Potentially interesting archive/cert file found.
 + /1678679.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /16786.tar.bz2: Potentially interesting archive/cert file found.
-+ /16786.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /22.jks: Potentially interesting archive/cert file found.
-+ /22.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /79.tar.bz2: Potentially interesting archive/cert file found.
-+ /79.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /1678679.pem: Potentially interesting archive/cert file found.
-+ /1678679.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.jks: Potentially interesting archive/cert file found.
-+ /167.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /site.cer: Potentially interesting archive/cert file found.
-+ /site.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.alz: Potentially interesting archive/cert file found.
-+ /167.86.79.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /site.tar.lzma: Potentially interesting archive/cert file found.
-+ /site.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /backup.cer: Potentially interesting archive/cert file found.
-+ /backup.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.war: Potentially interesting archive/cert file found.
-+ /167.86.79.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.egg: Potentially interesting archive/cert file found.
-+ /167.86.79.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.tar.lzma: Potentially interesting archive/cert file found.
-+ /167.86.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.tar.lzma: Potentially interesting archive/cert file found.
-+ /167.86.79.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167.86.79.22.tar.bz2: Potentially interesting archive/cert file found.
-+ /167.86.79.22.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /167_86_79_22.tar.lzma: Potentially interesting archive/cert file found.
-+ /167_86_79_22.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /22.tar: Potentially interesting archive/cert file found.
++ /22.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /22.tar.lzma: Potentially interesting archive/cert file found.
++ /22.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /86.jks: Potentially interesting archive/cert file found.
++ /86.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /86.pem: Potentially interesting archive/cert file found.
++ /86.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167_86_79_22.tar: Potentially interesting archive/cert file found.
++ /167_86_79_22.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1678679.tar.lzma: Potentially interesting archive/cert file found.
++ /1678679.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
 + /site.alz: Potentially interesting archive/cert file found.
 + /site.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ /site.jks: Potentially interesting archive/cert file found.
-+ /site.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
 + /22.alz: Potentially interesting archive/cert file found.
 + /22.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
-+ OSVDB-3092: /css/: This might be interesting...
-+ /core/modules/config/config.info.yml: Drupal version number revealed in config.info.yml
-+ 7921 requests: 0 error(s) and 265 item(s) reported on remote host
-+ End Time:           2022-05-04 19:02:01 (GMT1) (398 seconds)
----------------------------------------------------------------------------
-+ 1 host(s) tested
-
-
-      *********************************************************************
-      Portions of the server's headers (nginx/1.18.0) are not in
-      the Nikto 2.1.6 database or are newer than the known string. Would you like
-      to submit this information (*no server specific data*) to CIRT.net
-      for a Nikto update (or you may email to sullo@cirt.net) (y/n)? 
++ /167_86_79_22.alz: Potentially interesting archive/cert file found.
++ /167_86_79_22.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.alz: Potentially interesting archive/cert file found.
++ /backup.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.tar.lzma: Potentially interesting archive/cert file found.
++ /backup.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.jks: Potentially interesting archive/cert file found.
++ /167.86.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167_86_79_22.tar.lzma: Potentially interesting archive/cert file found.
++ /167_86_79_22.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167867922.war: Potentially interesting archive/cert file found.
++ /167867922.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167867922.alz: Potentially interesting archive/cert file found.
++ /167867922.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.tar.bz2: Potentially interesting archive/cert file found.
++ /site.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.jks: Potentially interesting archive/cert file found.
++ /site.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /79.tar.lzma: Potentially interesting archive/cert file found.
++ /79.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.pem: Potentially interesting archive/cert file found.
++ /backup.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.pem: Potentially interesting archive/cert file found.
++ /167.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /79.tgz: Potentially interesting archive/cert file found.
++ /79.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /79.tar: Potentially interesting archive/cert file found.
++ /79.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.tar.bz2: Potentially interesting archive/cert file found.
++ /backup.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.tar.bz2: Potentially interesting archive/cert file found.
++ /167.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167867922.egg: Potentially interesting archive/cert file found.
++ /167867922.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167867922.pem: Potentially interesting archive/cert file found.
++ /167867922.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.cer: Potentially interesting archive/cert file found.
++ /167.86.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /79.war: Potentially interesting archive/cert file found.
++ /79.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /16786.jks: Potentially interesting archive/cert file found.
++ /16786.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.jks: Potentially interesting archive/cert file found.
++ /167.86.79.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.tar: Potentially interesting archive/cert file found.
++ /167.86.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /79.tar.bz2: Potentially interesting archive/cert file found.
++ /79.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.egg: Potentially interesting archive/cert file found.
++ /167.86.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /22.cer: Potentially interesting archive/cert file found.
++ /22.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.22.alz: Potentially interesting archive/cert file found.
++ /167.86.79.22.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.22.tar.lzma: Potentially interesting archive/cert file found.
++ /167.86.79.22.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.war: Potentially interesting archive/cert file found.
++ /site.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.pem: Potentially interesting archive/cert file found.
++ /site.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1678679.alz: Potentially interesting archive/cert file found.
++ /1678679.alz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.tar: Potentially interesting archive/cert file found.
++ /167.86.79.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.22.tar: Potentially interesting archive/cert file found.
++ /167.86.79.22.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /86.egg: Potentially interesting archive/cert file found.
++ /86.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /22.war: Potentially interesting archive/cert file found.
++ /22.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167867922.tar.lzma: Potentially interesting archive/cert file found.
++ /167867922.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.war: Potentially interesting archive/cert file found.
++ /backup.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.tgz: Potentially interesting archive/cert file found.
++ /167.86.79.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167867922.tar.bz2: Potentially interesting archive/cert file found.
++ /167867922.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /79.cer: Potentially interesting archive/cert file found.
++ /79.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /22.tar.bz2: Potentially interesting archive/cert file found.
++ /22.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.tar: Potentially interesting archive/cert file found.
++ /site.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /79.egg: Potentially interesting archive/cert file found.
++ /79.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /16786.egg: Potentially interesting archive/cert file found.
++ /16786.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.22.war: Potentially interesting archive/cert file found.
++ /167.86.79.22.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1678679.tar: Potentially interesting archive/cert file found.
++ /1678679.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.tar.bz2: Potentially interesting archive/cert file found.
++ /167.86.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.cer: Potentially interesting archive/cert file found.
++ /backup.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.egg: Potentially interesting archive/cert file found.
++ /167.86.79.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.pem: Potentially interesting archive/cert file found.
++ /167.86.79.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167_86_79_22.tgz: Potentially interesting archive/cert file found.
++ /167_86_79_22.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.22.jks: Potentially interesting archive/cert file found.
++ /167.86.79.22.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1678679.jks: Potentially interesting archive/cert file found.
++ /1678679.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167867922.jks: Potentially interesting archive/cert file found.
++ /167867922.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167_86_79_22.egg: Potentially interesting archive/cert file found.
++ /167_86_79_22.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.tar: Potentially interesting archive/cert file found.
++ /backup.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /86.cer: Potentially interesting archive/cert file found.
++ /86.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /backup.egg: Potentially interesting archive/cert file found.
++ /backup.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.jks: Potentially interesting archive/cert file found.
++ /167.jks: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167867922.tgz: Potentially interesting archive/cert file found.
++ /167867922.tgz: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.tar.bz2: Potentially interesting archive/cert file found.
++ /167.86.79.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.war: Potentially interesting archive/cert file found.
++ /167.86.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /site.tar.lzma: Potentially interesting archive/cert file found.
++ /site.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /22.egg: Potentially interesting archive/cert file found.
++ /22.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /86.war: Potentially interesting archive/cert file found.
++ /86.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /16786.tar: Potentially interesting archive/cert file found.
++ /16786.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /16786.war: Potentially interesting archive/cert file found.
++ /16786.war: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.cer: Potentially interesting archive/cert file found.
++ /167.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.22.cer: Potentially interesting archive/cert file found.
++ /167.86.79.22.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1678679.cer: Potentially interesting archive/cert file found.
++ /1678679.cer: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.22.pem: Potentially interesting archive/cert file found.
++ /167.86.79.22.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167_86_79_22.tar.bz2: Potentially interesting archive/cert file found.
++ /167_86_79_22.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /86.tar.bz2: Potentially interesting archive/cert file found.
++ /86.tar.bz2: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167.86.79.tar.lzma: Potentially interesting archive/cert file found.
++ /167.86.79.tar.lzma: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1678679.egg: Potentially interesting archive/cert file found.
++ /1678679.egg: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /167867922.tar: Potentially interesting archive/cert file found.
++ /167867922.tar: Potentially interesting archive/cert file found. (NOTE: requested by IP address).
++ /1678679.pem: Potentially interesting archive/cert file found.
++ /1678679.pem: Potentially interesting archive/cert file found. (NOTE: requested by IP address).

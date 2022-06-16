@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Sun May 29 12:17:55 2022 as: nmap -sV "-Pn " -p 5060,2000,3306,80,8081,22 -oG nmap_5060,2000,3306,80,8081,22.txt 167.86.79.22
+Host: 167.86.79.22 (vmi782615.contaboserver.net)	Status: Up
+Host: 167.86.79.22 (vmi782615.contaboserver.net)	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.4 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/, 2000/closed/tcp//cisco-sccp///, 3306/open/tcp//mysql//MySQL 8.0.27-0ubuntu0.20.04.1/, 5060/closed/tcp//sip///, 8081/open/tcp//http//Jetty 9.4.43.v20210629/
+# Nmap done at Sun May 29 12:18:04 2022 -- 1 IP address (1 host up) scanned in 8.51 seconds

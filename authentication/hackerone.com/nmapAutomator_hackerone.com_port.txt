@@ -1,0 +1,22 @@
+
+[0;33mRunning a port scan on [0mhackerone.com[0;33m with IP [0m104.16.99.52
+
+[0m
+[0;32mHost is likely running Unknown OS!
+
+
+[0;32m---------------------Starting Port Scan-----------------------
+[0m
+In progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: No Scan (0:00:00 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: SYN Stealth Scan (0:00:02 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: SYN Stealth Scan (0:00:03 elapsed - 0:00:00 remaining)   
+[#>                                                                                                    ] 0% done   
+[2AIn progress: SYN Stealth Scan (0:00:04 elapsed - 0:00:17 remaining)   
+[##########>                                                                                          ] 10% done   
+[2AIn progress: SYN Stealth Scan (0:00:05 elapsed - 0:00:06 remaining)   
+[##################################>                                                                  ] 34% done   
+[2A

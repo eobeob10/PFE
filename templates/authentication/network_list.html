@@ -1,9 +1,271 @@
-<html>
+{% load static %}
 
+<html>
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+     <link href="{% static 'assets/vendor/fonts/circular-std/style.css' %}" rel="stylesheet">
+     <link rel="stylesheet" href="{% static 'assets/libs/css/style.css' %}">
+     <link rel="stylesheet" href="{% static 'assets/vendor/fonts/fontawesome/css/fontawesome-all.css' %}">
+     <link rel="stylesheet" href="{% static 'assets/vendor/charts/chartist-bundle/chartist.css' %}">
+     <link rel="stylesheet" href="{% static 'assets/vendor/charts/morris-bundle/morris.css' %}">
+     <link rel="stylesheet" href="{%
+              static 'assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css' %}">
+     <link rel="stylesheet" href="{% static 'assets/vendor/charts/c3charts/c3.css' %}">
+     <link rel="stylesheet" href="{% static 'assets/vendor/fonts/flag-icon-css/flag-icon.min.css' %}">
+     <script src="jquery.js"></script>
+      <!-- navbar -->
+  <!-- ============================================================== -->
+  <div class="dashboard-header">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+      <a class="navbar-brand" href="/">
+        <div class="logo-image">
+          <img src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/generic/logos/20170526-EY-Digital-Brand.svg"
+            class="img-fluid">
+        </div>
+      </a>
+      <a class="navbar-brand" href="index.html">RedTeam's Enumeration Platfom</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto navbar-right-top">
+          <li class="nav-item">
+            <div id="custom-search" class="top-search-bar">
+              <input class="form-control" type="text" placeholder="Search..">
+            </div>
+          </li>
+          <li class="nav-item dropdown notification">
+            <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span
+                class="indicator"></span></a>
+            <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+              <li>
+                <div class="notification-title"> Notification</div>
+                <div class="notification-list">
+                  <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                      <div class="notification-info">
+                        <div class="notification-list-user-img"><img src="{% static 'assets/images/avatar-2.jpg' %}"
+                            alt="" class="user-avatar-md rounded-circle"></div>
+                        <div class="notification-list-user-block"><span class="notification-list-user-name">Jeremy
+                            Rakestraw</span>accepted your invitation to join the team.
+                          <div class="notification-date">2 min ago</div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="notification-info">
+                        <div class="notification-list-user-img"><img src="{% static 'assets/images/avatar-3.jpg' %}"
+                            alt="" class="user-avatar-md rounded-circle"></div>
+                        <div class="notification-list-user-block"><span class="notification-list-user-name">John Abraham
+                          </span>is
+                          now following you
+                          <div class="notification-date">2 days ago</div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="notification-info">
+                        <div class="notification-list-user-img"><img src="{% static 'assets/images/avatar-4.jpg' %}"
+                            alt="" class="user-avatar-md rounded-circle"></div>
+                        <div class="notification-list-user-block"><span class="notification-list-user-name">Monaan
+                            Pechi</span> is
+                          watching your main repository
+                          <div class="notification-date">2 min ago</div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="notification-info">
+                        <div class="notification-list-user-img"><img src="{% static 'assets/images/avatar-5.jpg' %}"
+                            alt="" class="user-avatar-md rounded-circle"></div>
+                        <div class="notification-list-user-block"><span class="notification-list-user-name">Jessica
+                            Caruso</span>accepted your invitation to join the team.
+                          <div class="notification-date">2 min ago</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="list-footer"> <a href="#">View all notifications</a></div>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown connection">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+            <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
+              <li class="connection-list">
+                <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                    <a href="#" class="connection-item"><img src="{% static 'assets/images/github.png' %}" alt="">
+                      <span>Github</span></a>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                    <a href="#" class="connection-item"><img src="{% static 'assets/images/dribbble.png' %}" alt="">
+                      <span>Dribbble</span></a>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                    <a href="#" class="connection-item"><img src="{% static 'assets/images/dropbox.png' %}" alt="">
+                      <span>Dropbox</span></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                    <a href="#" class="connection-item"><img src="{% static 'assets/images/bitbucket.png' %}" alt="">
+                      <span>Bitbucket</span></a>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                    <a href="#" class="connection-item"><img src="{% static 'assets/images/mail_chimp.png' %}"
+                        alt=""><span>Mail
+                        chimp</span></a>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                    <a href="#" class="connection-item"><img src="{% static 'assets/images/slack.png' %}" alt="">
+                      <span>Slack</span></a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="conntection-footer"><a href="#">More</a></div>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown nav-user">
+            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"><img src="assets/images/avatar-1.jpg' %}" alt=""
+                class="user-avatar-md rounded-circle"></a>
+            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" aria-labelledby="navbarDropdownMenuLink2">
+              <div class="nav-user-info">
+                <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
+                <span class="status"></span><span class="ml-2">Available</span>
+              </div>
+              <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+              <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+              <a class="dropdown-item" href="{%url 'signout' %}"><i class="fas fa-power-off mr-2"></i>Logout</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- ============================================================== -->
+  <!-- end navbar -->
+<!-- left sidebar -->
+<!-- ============================================================== -->
+<div class="nav-left-sidebar sidebar-dark">
+    <div class="menu-list">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-divider">
+                        Menu
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false"
+                            data-target="#submenu-1" aria-controls="submenu-1"><i
+                                class="fa fa-fw fa-user-circle"></i>Dashboard <span
+                                class="badge badge-success">6</span></a>
+                        <div id="submenu-1" class="collapse submenu" style="">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                        data-target="#submenu-1-2" aria-controls="submenu-1-2">Manage Scans</a>
+                                    <div id="submenu-1-2" class="collapse submenu" style="">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">create</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="ecommerce-product.html">modify </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="ecommerce-product-single.html"> update</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="ecommerce-product-checkout.html">add</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard-finance.html"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard-sales.html"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                        data-target="#submenu-1-1" aria-controls="submenu-1-1">manage Asset
+                                        Discovery</a>
+                                    <div id="submenu-1-1" class="collapse submenu" style="">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="dashboard-influencer.html">View assets</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="'authentication/asset_discovery.html'">Update
+                                                    assets
+                                                    information</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="influencer-profile.html">Delete assets</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                            data-target="#submenu-2" aria-controls="submenu-2"><i
+                                class="fa fa-fw fa-rocket"></i>Consult</a>
+                        <div id="submenu-2" class="collapse submenu" style="">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/cards.html">Consult Scans <span
+                                            class="badge badge-secondary">New</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/general.html">Consult Asset Discovery</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- end left sidebar -->
+<!-- ============================================================== -->
 <head>
     <style>
         body {
-            background: #eee
+            font-family: "Poppins",
+                Arial,
+                sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            font-weight: normal;
+            background: #fafafa;
+            color: gray;
         }
 
         .icons i {
@@ -12,15 +274,15 @@
             padding: 6px;
             margin-left: 4px;
             border-radius: 5px;
-            cursor: pointer
+            cursor: pointer;
         }
 
         .activity-done {
-            font-weight: 600
+            font-weight: 600;
         }
 
         .list-group li {
-            margin-bottom: 12px
+            margin-bottom: 12px;
         }
 
         .list-group-item {}
@@ -31,20 +293,20 @@
             border: 1px solid #e3dada;
             margin-top: 12px;
             border-radius: 5px;
-            background: #fff
+            background: #fff;
         }
 
         .checkicon {
             color: green;
-            font-size: 19px
+            font-size: 19px;
         }
 
         .date-time {
-            font-size: 12px
+            font-size: 12px;
         }
 
         .profile-image img {
-            margin-left: 3px
+            margin-left: 3px;
         }
     </style>
 </head>
@@ -55,97 +317,82 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="d-flex justify-content-between align-items-center activity">
-                    <div><i class="fa fa-clock-o"></i><span class="ml-2">11h 25m</span></div>
-                    <div><span class="activity-done">Done Activities(4)</span></div>
-                    <div class="icons"><i class="fa fa-search"></i><i class="fa fa-ellipsis-h"></i></div>
+                    
+                    <div><span class="activity-done">Available Network Interfaces</span></div>
+                    
                 </div>
                 <div class="mt-3">
                     <ul class="list list-inline">
                         <li class="d-flex justify-content-between">
-                            <div class="d-flex flex-row align-items-center"><i class="fa fa-check-circle checkicon"></i>
+                            <div class="d-flex flex-row align-items-center">
                                 <div class="ml-2">
-                                    <h6 class="mb-0">Kickoff meeting</h6>
+                                    <h6 class="mb-0">lo : 127.0.0.1</h6>
                                     <div class="d-flex flex-row mt-1 text-black-50 date-time">
-                                        <div><i class="fa fa-calendar-o"></i><span class="ml-2">22 May 2020 11:30
-                                                PM</span>
-                                        </div>
-                                        <div class="ml-3"><i class="fa fa-clock-o"></i><span class="ml-2">6h</span>
+                                        <div><i class="fa fa-calendar-o"></i><span class="ml-2">inet6 ::1</span></div>
+                                        <div class="ml-3"><i class="fa fa-clock-o"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-row align-items-center">
                                 <div class="d-flex flex-column mr-2">
-                                    <div class="profile-image"><img class="rounded-circle"
-                                            src="https://i.imgur.com/xbxOs06.jpg" width="30"><img class="rounded-circle"
-                                            src="https://i.imgur.com/KIJewDa.jpg" width="30"><img class="rounded-circle"
-                                            src="https://i.imgur.com/wwd9uNI.jpg" width="30"></div><span
-                                        class="date-time">11/4/2020 12:55</span>
-                                </div> <i class="fa fa-ellipsis-h"></i>
+
+                                </div>
+                                <i class="fa fa-ellipsis-h"></i>
                             </div>
                         </li>
                         <li class="d-flex justify-content-between">
-                            <div class="d-flex flex-row align-items-center"><i class="fa fa-check-circle checkicon"></i>
+                            <div class="d-flex flex-row align-items-center">
                                 <div class="ml-2">
-                                    <h6 class="mb-0">User Interview</h6>
+                                    <h6 class="mb-0">bond0</h6>
                                     <div class="d-flex flex-row mt-1 text-black-50 date-time">
-                                        <div><i class="fa fa-calendar-o"></i><span class="ml-2">25 May 2020 12:34
-                                                AM</span>
-                                        </div>
-                                        <div class="ml-3"><i class="fa fa-clock-o"></i><span class="ml-2">4h</span>
+                                        <div><i class="fa fa-calendar-o"></i><span class="ml-2"></span></div>
+                                        <div class="ml-3"><i class="fa fa-clock-o"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-row align-items-center">
                                 <div class="d-flex flex-column mr-2">
-                                    <div class="profile-image"><img class="rounded-circle"
-                                            src="https://i.imgur.com/xbxOs06.jpg" width="30"><img class="rounded-circle"
-                                            src="https://i.imgur.com/wwd9uNI.jpg" width="30"></div><span
-                                        class="date-time">12/5/2020 12:55</span>
+
+
                                 </div><i class="fa fa-ellipsis-h"></i>
                             </div>
                         </li>
                         <li class="d-flex justify-content-between">
-                            <div class="d-flex flex-row align-items-center"><i class="fa fa-check-circle checkicon"></i>
+                            <div class="d-flex flex-row align-items-center">
                                 <div class="ml-2">
-                                    <h6 class="mb-0">Prototyping</h6>
+                                    <h6 class="mb-0">dummy0</h6>
                                     <div class="d-flex flex-row mt-1 text-black-50 date-time">
-                                        <div><i class="fa fa-calendar-o"></i><span class="ml-2">17 May 2020 1:34
-                                                PM</span>
-                                        </div>
-                                        <div class="ml-3"><i class="fa fa-clock-o"></i><span class="ml-2">6h</span>
+                                        <div><i class="fa fa-calendar-o"></i><span class="ml-2"></span></div>
+                                        <div class="ml-3"><i class="fa fa-clock-o"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-row align-items-center">
                                 <div class="d-flex flex-column mr-2">
-                                    <div class="profile-image"><img class="rounded-circle"
-                                            src="https://i.imgur.com/xbxOs06.jpg" width="30"><img class="rounded-circle"
-                                            src="https://i.imgur.com/KIJewDa.jpg" width="30"></div><span
-                                        class="date-time">16/4/2020 1:55</span>
+
+
                                 </div><i class="fa fa-ellipsis-h"></i>
                             </div>
                         </li>
                         <li class="d-flex justify-content-between">
-                            <div class="d-flex flex-row align-items-center"><i class="fa fa-check-circle checkicon"></i>
+                            <div class="d-flex flex-row align-items-center">
                                 <div class="ml-2">
-                                    <h6 class="mb-0">Call with client</h6>
+                                    <h6 class="mb-0">tunl0@NONE:</h6>
                                     <div class="d-flex flex-row mt-1 text-black-50 date-time">
-                                        <div><i class="fa fa-calendar-o"></i><span class="ml-2">12 May 2020 12:35
-                                                AM</span>
-                                        </div>
-                                        <div class="ml-3"><i class="fa fa-clock-o"></i><span class="ml-2">6h</span>
+                                        <div><i class="fa fa-calendar-o"></i><span class="ml-2"> </span></div>
+                                        <div class="ml-3"><i class="fa fa-clock-o"></i>>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="d-flex flex-row align-items-center">
                                 <div class="d-flex flex-column mr-2">
-                                    <div class="profile-image"><img class="rounded-circle"
-                                            src="https://i.imgur.com/wwd9uNI.jpg" width="30"></div><span
-                                        class="date-time">11/4/2020 12:55</span>
+
+
+
                                 </div><i class="fa fa-ellipsis-h"></i>
                             </div>
                         </li>
@@ -157,3 +404,18 @@
 </body>
 
 </html>
+<link rel="stylesheet" href="{% static 'bootstrap.bundle.min.js' %}">
+<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+<link rel="stylesheet" href="{% static 'font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'jquery.min.js' %}">
+<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }), _trfd.push({ 'ap': 'cpbh-mt' }, { 'server': 'p3plmcpnl487010' }, { 'id': '8437534' }) 
+</script>
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
+<script type="text/javascript">
+    

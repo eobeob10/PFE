@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sat May 21 15:43:47 2022 as: nmap -p 21 -sS -&#45;script ftp-anon,ftp-syst,tftp-enum,ftp-vsftpd-backdoor -oX ftp-172.23.101.159.xml 172.23.101.159 -->
+<nmaprun scanner="nmap" args="nmap -p 21 -sS -&#45;script ftp-anon,ftp-syst,tftp-enum,ftp-vsftpd-backdoor -oX ftp-172.23.101.159.xml 172.23.101.159" start="1653144227" startstr="Sat May 21 15:43:47 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="21"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.23.101.159" addrtype="ipv4"/>
+<address addr="00:0C:29:26:9F:8A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1653144229" endtime="1653144230"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.23.101.159" addrtype="ipv4"/>
+<address addr="00:0C:29:26:9F:8A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ftp" method="table" conf="3"/><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)"/><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to 172.23.101.160&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     vsFTPd 2.3.4 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to 172.23.101.160&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     vsFTPd 2.3.4 - secure, fast, stable&#xa;End of status</elem>
+</script><script id="ftp-vsftpd-backdoor" output="&#xa;  VULNERABLE:&#xa;  vsFTPd version 2.3.4 backdoor&#xa;    State: VULNERABLE (Exploitable)&#xa;    IDs:  CVE:CVE-2011-2523  BID:48539&#xa;      vsFTPd version 2.3.4 backdoor, this was reported on 2011-07-04.&#xa;    Disclosure date: 2011-07-03&#xa;    Exploit results:&#xa;      Shell command: id&#xa;      Results: uid=0(root) gid=0(root)&#xa;    References:&#xa;      http://scarybeastsecurity.blogspot.com/2011/07/alert-vsftpd-download-backdoored.html&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2523&#xa;      https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb&#xa;      https://www.securityfocus.com/bid/48539&#xa;"><table key="CVE-2011-2523">
+<elem key="title">vsFTPd version 2.3.4 backdoor</elem>
+<elem key="state">VULNERABLE (Exploitable)</elem>
+<table key="ids">
+<elem>CVE:CVE-2011-2523</elem>
+<elem>BID:48539</elem>
+</table>
+<table key="description">
+<elem>vsFTPd version 2.3.4 backdoor, this was reported on 2011-07-04.</elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="day">03</elem>
+<elem key="year">2011</elem>
+<elem key="month">07</elem>
+</table>
+</table>
+<elem key="disclosure">2011-07-03</elem>
+<table key="exploit_results">
+<elem>Shell command: id</elem>
+<elem>Results: uid=0(root) gid=0(root)</elem>
+</table>
+<table key="refs">
+<elem>http://scarybeastsecurity.blogspot.com/2011/07/alert-vsftpd-download-backdoored.html</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2523</elem>
+<elem>https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb</elem>
+<elem>https://www.securityfocus.com/bid/48539</elem>
+</table>
+</table>
+</script></port>
+</ports>
+<times srtt="1540" rttvar="3770" to="100000"/>
+</host>
+<runstats><finished time="1653144230" timestr="Sat May 21 15:43:50 2022" summary="Nmap done at Sat May 21 15:43:50 2022; 1 IP address (1 host up) scanned in 3.28 seconds" elapsed="3.28" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

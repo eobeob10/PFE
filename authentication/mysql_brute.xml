@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sun May 22 08:54:36 2022 as: nmap -p 3306 -&#45;script mysql-brute -&#45;script-args mysql-brute.threads=100 -oX mysql_brute.xml 172.23.101.159 -->
+<nmaprun scanner="nmap" args="nmap -p 3306 -&#45;script mysql-brute -&#45;script-args mysql-brute.threads=100 -oX mysql_brute.xml 172.23.101.159" start="1653206076" startstr="Sun May 22 08:54:36 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="3306"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.23.101.159" addrtype="ipv4"/>
+<address addr="00:0C:29:26:9F:8A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1653206078" endtime="1653206148"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.23.101.159" addrtype="ipv4"/>
+<address addr="00:0C:29:26:9F:8A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" method="table" conf="3"/><script id="mysql-brute" output="&#xa;  Accounts: &#xa;    root:&lt;empty&gt; - Valid credentials&#xa;    guest:&lt;empty&gt; - Valid credentials&#xa;  Statistics: Performed 40013 guesses in 70 seconds, average tps: 521.2"><table key="Accounts">
+<table>
+<elem key="password">&lt;empty&gt;</elem>
+<elem key="state">Valid credentials</elem>
+<elem key="username">root</elem>
+</table>
+<table>
+<elem key="password">&lt;empty&gt;</elem>
+<elem key="state">Valid credentials</elem>
+<elem key="username">guest</elem>
+</table>
+</table>
+<elem key="Statistics">Performed 40013 guesses in 70 seconds, average tps: 521.2</elem>
+</script></port>
+</ports>
+<times srtt="961" rttvar="3841" to="100000"/>
+</host>
+<runstats><finished time="1653206148" timestr="Sun May 22 08:55:48 2022" summary="Nmap done at Sun May 22 08:55:48 2022; 1 IP address (1 host up) scanned in 72.07 seconds" elapsed="72.07" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,4 @@
+# Nmap 7.92 scan initiated Tue May 17 15:40:22 2022 as: nmap -sV "-Pn " -p 2000,5060 -oG nmap 172.17.146.160
+Host: 172.17.146.160 ()	Status: Up
+Host: 172.17.146.160 ()	Ports: 2000/open/tcp//cisco-sccp?///, 5060/open/tcp//sip?///
+# Nmap done at Tue May 17 15:43:06 2022 -- 1 IP address (1 host up) scanned in 163.87 seconds

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sun May 22 08:49:13 2022 as: nmap -p 3306 -&#45;script mysql-enum -oX mysql-enum.xml 172.23.101.159 -->
+<nmaprun scanner="nmap" args="nmap -p 3306 -&#45;script mysql-enum -oX mysql-enum.xml 172.23.101.159" start="1653205753" startstr="Sun May 22 08:49:13 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="3306"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.23.101.159" addrtype="ipv4"/>
+<address addr="00:0C:29:26:9F:8A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1653205755" endtime="1653205755"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.23.101.159" addrtype="ipv4"/>
+<address addr="00:0C:29:26:9F:8A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" method="table" conf="3"/><script id="mysql-enum" output="&#xa;  Accounts: No valid accounts found&#xa;  Statistics: Performed 10 guesses in 1 seconds, average tps: 10.0"><elem key="Accounts">No valid accounts found</elem>
+<elem key="Statistics">Performed 10 guesses in 1 seconds, average tps: 10.0</elem>
+</script></port>
+</ports>
+<times srtt="993" rttvar="4150" to="100000"/>
+</host>
+<runstats><finished time="1653205755" timestr="Sun May 22 08:49:15 2022" summary="Nmap done at Sun May 22 08:49:15 2022; 1 IP address (1 host up) scanned in 2.84 seconds" elapsed="2.84" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

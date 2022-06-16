@@ -1,0 +1,24 @@
+Doing NBT name scan for addresses from 172.23.101.159
+
+
+NetBIOS Name Table for Host 172.23.101.159:
+
+Incomplete packet, 335 bytes long.
+Name             Service          Type
+----------------------------------------
+METASPLOITABLE   <00>             UNIQUE
+METASPLOITABLE   <03>             UNIQUE
+METASPLOITABLE   <20>             UNIQUE
+METASPLOITABLE   <00>             UNIQUE
+METASPLOITABLE   <03>             UNIQUE
+METASPLOITABLE   <20>             UNIQUE
+__MSBROWSE__  <01>              GROUP
+WORKGROUP        <00>              GROUP
+WORKGROUP        <1d>             UNIQUE
+WORKGROUP        <1e>              GROUP
+WORKGROUP        <00>              GROUP
+WORKGROUP        <1d>             UNIQUE
+WORKGROUP        <1e>              GROUP
+
+Adapter address: 00:00:00:00:00:00
+----------------------------------------b'Doing NBT name scan for addresses from 172.23.101.159\r\n\r\n\r\nNetBIOS Name Table for Host 172.23.101.159:\r\n\r\nIncomplete packet, 335 bytes long.\r\nName             Service          Type\r\n----------------------------------------\r\nMETASPLOITABLE   <00>             UNIQUE\r\nMETASPLOITABLE   <03>             UNIQUE\r\nMETASPLOITABLE   <20>             UNIQUE\r\nMETASPLOITABLE   <00>             UNIQUE\r\nMETASPLOITABLE   <03>             UNIQUE\r\nMETASPLOITABLE   <20>             UNIQUE\r\n\x01\x02__MSBROWSE__\x02  <01>              GROUP\r\nWORKGROUP        <00>              GROUP\r\nWORKGROUP        <1d>             UNIQUE\r\nWORKGROUP        <1e>              GROUP\r\nWORKGROUP        <00>              GROUP\r\nWORKGROUP        <1d>             UNIQUE\r\nWORKGROUP        <1e>              GROUP\r\n\r\nAdapter address: 00:00:00:00:00:00\r\n----------------------------------------'

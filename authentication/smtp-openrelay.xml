@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sat May 21 16:16:34 2022 as: nmap -p 25 -&#45;script smtp-open-relay -oX smtp-openrelay.xml 172.23.101.159 -->
+<nmaprun scanner="nmap" args="nmap -p 25 -&#45;script smtp-open-relay -oX smtp-openrelay.xml 172.23.101.159" start="1653146194" startstr="Sat May 21 16:16:34 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="25"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.23.101.159" addrtype="ipv4"/>
+<address addr="00:0C:29:26:9F:8A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1653146196" endtime="1653146214"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.23.101.159" addrtype="ipv4"/>
+<address addr="00:0C:29:26:9F:8A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="smtp" method="table" conf="3"/><script id="smtp-open-relay" output="Server doesn&apos;t seem to be an open relay, all tests failed"/></port>
+</ports>
+<times srtt="1290" rttvar="3870" to="100000"/>
+</host>
+<runstats><finished time="1653146214" timestr="Sat May 21 16:16:54 2022" summary="Nmap done at Sat May 21 16:16:54 2022; 1 IP address (1 host up) scanned in 20.21 seconds" elapsed="20.21" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

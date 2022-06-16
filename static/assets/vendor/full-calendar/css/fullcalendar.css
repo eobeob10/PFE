@@ -789,7 +789,7 @@ NOTE: use percentage font sizes or else old IE chokes
   color: #fff; }
 
 .fc-bootstrap4 .fc-popover.card {
-  position: absolute; }
+  position: relative; }
 
 /* Popover
 --------------------------------------------------------------------------------------------------*/

@@ -1,0 +1,8 @@
+[[36m2022-05-26 14:11:49[0m] [[92mvnc-service-detection[0m] [[94mnetwork[0m] [[34minfo[0m] 172.26.105.53:5900 [[96mRFB 003.003[0m]
+[[36m2022-05-26 14:11:50[0m] [[92msmb-v1-detection[0m] [[94mnetwork[0m] [[32mlow[0m] 172.26.105.53:445
+[[36m2022-05-26 14:11:52[0m] [[92msamba-detection[0m] [[94mnetwork[0m] [[34minfo[0m] 172.26.105.53:139
+[[36m2022-05-26 14:11:56[0m] [[92mvsftpd-detection[0m] [[94mnetwork[0m] [[31mcritical[0m] 172.26.105.53:21
+[[36m2022-05-26 14:12:04[0m] [[92mCVE-2016-6210[0m] [[94mnetwork[0m] [[33mmedium[0m] 172.26.105.53:22 [[96mSSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1[0m]
+[[36m2022-05-26 14:12:05[0m] [[92mCVE-2018-15473[0m] [[94mnetwork[0m] [[33mmedium[0m] 172.26.105.53:22 [[96mSSH-2.0-OpenSSH_4.7p1 Debian-8ubuntu1
+[0m]
+[[36m2022-05-26 14:12:09[0m] [[92msmtp-service-detection[0m] [[94mnetwork[0m] [[34minfo[0m] 172.26.105.53:25

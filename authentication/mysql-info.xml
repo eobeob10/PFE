@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sun May 22 08:46:22 2022 as: nmap -p 3306 -&#45;script mysql-info -oX mysql-info.xml 172.23.101.159 -->
+<nmaprun scanner="nmap" args="nmap -p 3306 -&#45;script mysql-info -oX mysql-info.xml 172.23.101.159" start="1653205582" startstr="Sun May 22 08:46:22 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="3306"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.23.101.159" addrtype="ipv4"/>
+<address addr="00:0C:29:26:9F:8A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1653205584" endtime="1653205585"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="172.23.101.159" addrtype="ipv4"/>
+<address addr="00:0C:29:26:9F:8A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="mysql" method="table" conf="3"/><script id="mysql-info" output="&#xa;  Protocol: 10&#xa;  Version: 5.0.51a-3ubuntu5&#xa;  Thread ID: 34&#xa;  Capabilities flags: 43564&#xa;  Some Capabilities: SwitchToSSLAfterHandshake, Support41Auth, SupportsTransactions, Speaks41ProtocolNew, ConnectWithDatabase, SupportsCompression, LongColumnFlag&#xa;  Status: Autocommit&#xa;  Salt: ;pD@Ui4bs:gxF4oT6Rz/"><elem key="Protocol">10</elem>
+<elem key="Version">5.0.51a-3ubuntu5</elem>
+<elem key="Thread ID">34</elem>
+<elem key="Capabilities flags">43564</elem>
+<table key="Some Capabilities">
+<elem>SwitchToSSLAfterHandshake</elem>
+<elem>Support41Auth</elem>
+<elem>SupportsTransactions</elem>
+<elem>Speaks41ProtocolNew</elem>
+<elem>ConnectWithDatabase</elem>
+<elem>SupportsCompression</elem>
+<elem>LongColumnFlag</elem>
+</table>
+<elem key="Status">Autocommit</elem>
+<elem key="Salt">;pD@Ui4bs:gxF4oT6Rz/</elem>
+</script></port>
+</ports>
+<times srtt="1268" rttvar="3788" to="100000"/>
+</host>
+<runstats><finished time="1653205585" timestr="Sun May 22 08:46:25 2022" summary="Nmap done at Sun May 22 08:46:25 2022; 1 IP address (1 host up) scanned in 2.88 seconds" elapsed="2.88" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

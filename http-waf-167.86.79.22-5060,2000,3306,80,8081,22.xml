@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.92 scan initiated Sun May 29 12:18:16 2022 as: nmap -Pn -p 5060,2000,3306,80,8081,22 -&#45;script http-waf-detect, -oX http-waf-167.86.79.22-5060,2000,3306,80,8081,22.xml http-waf-fingerprint 167.86.79.22 -->
+<nmaprun scanner="nmap" args="nmap -Pn -p 5060,2000,3306,80,8081,22 -&#45;script http-waf-detect, -oX http-waf-167.86.79.22-5060,2000,3306,80,8081,22.xml http-waf-fingerprint 167.86.79.22" start="1653826696" startstr="Sun May 29 12:18:16 2022" version="7.92" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="6" services="22,80,2000,3306,5060,8081"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1653826699" endtime="1653826700"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="167.86.79.22" addrtype="ipv4"/>
+<hostnames>
+<hostname name="vmi782615.contaboserver.net" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="2000"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="cisco-sccp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5060"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="sip" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8081"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="blackice-icecap" method="table" conf="3"/></port>
+</ports>
+<times srtt="92945" rttvar="22087" to="181293"/>
+</host>
+<runstats><finished time="1653826700" timestr="Sun May 29 12:18:20 2022" summary="Nmap done at Sun May 29 12:18:20 2022; 1 IP address (1 host up) scanned in 3.68 seconds" elapsed="3.68" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,4 +1,4 @@
-# Nmap 7.92 scan initiated Wed May  4 18:55:20 2022 as: nmap -Pn -p 5060,2000,3306,80,8081,22 --script http-waf-detect, -oG http-waf-167.86.79.22-5060,2000,3306,80,8081,22.txt http-waf-fingerprint 167.86.79.22
+# Nmap 7.92 scan initiated Tue May 10 18:35:42 2022 as: nmap -Pn -p 5060,2000,3306,80,8081,22 --script http-waf-detect, -oG http-waf-167.86.79.22-5060,2000,3306,80,8081,22.txt http-waf-fingerprint 167.86.79.22
 Host: 167.86.79.22 (vmi782615.contaboserver.net)	Status: Up
 Host: 167.86.79.22 (vmi782615.contaboserver.net)	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 2000/open/tcp//cisco-sccp///, 3306/open/tcp//mysql///, 5060/open/tcp//sip///, 8081/open/tcp//blackice-icecap///
-# Nmap done at Wed May  4 18:55:23 2022 -- 1 IP address (1 host up) scanned in 2.94 seconds
+# Nmap done at Tue May 10 18:35:46 2022 -- 1 IP address (1 host up) scanned in 3.89 seconds

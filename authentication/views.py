@@ -9,21 +9,54 @@ from django.template.loader import render_to_string
 from django.utils.http import urlsafe_base64_decode, urlsafe_base64_encode
 from django.utils.encoding import force_bytes
 from django.utils.encoding import force_str
+import os
+import time
+from . import Web_scraping
 from django.contrib.auth import authenticate, login, logout
 from . tokens import generate_token
 from .forms import FileForm
 from django.core.files.storage import FileSystemStorage
 from django.contrib.auth.decorators import login_required
-from .models import Scan, Documents
+from .models import Scan
+from datetime import datetime, timedelta
+from pwn import *
+import subprocess
+import shlex
+
+
+def check_process():
+
+    script_name = "script_enum.py"
+    cmd = 'pgrep -f .*python.*{}'.format(script_name)
+    process = subprocess.Popen(
+        cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    my_pid, err = process.communicate()
+    if len(my_pid.splitlines()) > 0:
+        return 1
+        sys.exit(0)
 
 
 def home(request):
     if not request.user.is_authenticated:
         return redirect("signin")
-    scans = Scan.objects.filter(user=request.user)
-    # print(scans[0].description)
-    return render(request, 'authentication/index.html', {'fname': request.user.first_name})
-    # , 'scans': scans})
+    else:
+
+        # scans = Scan.objects.latest(datetime.now)
+
+        text_muted = Web_scraping.i
+        with open("authentication/js.txt") as file:
+            lines = file.readlines()
+            updated = datetime.now()
+
+        last_four = Scan.objects.order_by('-id')[:1]
+        if check_process == 1:
+            pending = True
+        else:
+            pending = False
+    if request.method == 'POST':
+        redirect('home')
+
+    return render(request, 'authentication/index.html', {'fname': request.user.first_name, 'pending': pending, 'text_muted': text_muted, 'lines': lines, 'last_four': last_four})
 
 
 def scan_list(request):
@@ -198,23 +231,60 @@ def createScan(request):
         return redirect("signin")
     else:
         if request.method == 'POST':
-            scan_name = request.POST['title'].replace(" ", "_")
-
-            #user = request.user
-            upload = request.FILES['images']
+            name = request.POST['title'].replace(" ", "_")
+            upload = request.FILES.get('images')
+            description = request.POST['caption']
+            user = request.user
             fls = FileSystemStorage()
-            context = {
-                'scan_name': scan_name,
-                'upload': upload
-            }
-            fs = fls.save('uploads' + request.user.username, context)
+
+       # context = {
+        # 'scan_name': scan_name,
+        # 'upload': upload
+        # }
+        # fs = fls.save[('uploads' + request.user.username), contex]
+            fs = fls.save('uploads/'+request.user.username+'_1', upload)
             scan_file = fls.url(fs)
-            scan = Scan(scan_name=scan_name,
-                        scan_file=scan_file, user=scan_user)
-            if Scan.is_valid():
-                scan.save()
+        # start = time.strftime('%a, %d %b %Y %H:%M:%S %Z(%z)')
+        # print('start : '+start)
+        # subprocess.Popen['python3 ', upload]
+        # end = time.strftime('%a, %d %b %Y %H:%M:%S %Z(%z)')
+        # print('end : '+end)
+            start = datetime.now()
+            scan = Scan(name=name, Target=scan_file,
+                        description=description, user=user, created=start)  # Created_at=start, finished_at=end)
+        # print(scan)
+            scan.save()
+            print(scan.name)
+            print(scan.created)
+            x = subprocess.Popen(['python3', 'script_enum.py',
+                                 str(fs), str(user), str(name)])
+            end = start + timedelta(7)
+            scan.save()
+
             return redirect('home')
+
         return render(request, 'authentication/upload.html')
+
+
+@login_required(login_url='signin')
+def scanlist(request):
+    if not request.user.is_authenticated:
+        return redirect("signin")
+    else:
+
+        scans = Scan.objects.order_by('-id')
+    if request.method == 'POST':
+
+        # context = {'scans': scans,
+        # 'name':  request.POST['title'].replace(" ", "_"),
+        # 'user': request.user.username,
+        # 'description': request.POST['caption'],
+        # 'Created_at': True,
+        # 'finished': True,
+        # 'status': True, }
+        redirect('home')
+    print(scans[16].created)
+    return render(request, 'authentication/scan_list.html', {'scans': scans})
 
 
 @ login_required(login_url='signin')
@@ -248,8 +318,41 @@ def Asset_Discovery(request):
     if not request.user.is_authenticated:
         return redirect("signin")
     else:
+        lst = [2, 3, 4, 5]
+        with open('authentication/Host discovery/default.txt') as f:
+            value = f.read()
+            # for i in f.readlines():
+            # for j in lst:
+            # x = subprocess.check_output("ifconfig " + i[:-1] + ' | ' +
+            # 'awk ' + "'$1==\"inet\"{print $" + str(j)+"}'", shell=True)
+            #x = x.strip()
+            #context = {'values': i}
 
-        return render(request, 'authentication/asset_discovery.html')
+    return render(request, 'authentication/asset_discovery.html', {'value': value})
+
+
+@ login_required(login_url='signin')
+def consult(request):
+    if not request.user.is_authenticated:
+        return redirect("signin")
+    else:
+        with open('./templates/authentication/web_formatter.html') as f:
+            file = f.readlines()
+            context1 = {'file': file}
+
+        with open('/mnt/c/Users/Nour Abdessalem/Desktop/abcd/authentication/http_results1.txt') as file:
+            x = file.read()
+            file.close()
+
+    return render(request, 'authentication/details.html', {'file': file, 'x': x})
+
+
+@ login_required(login_url='signin')
+def web_formatter(request):
+    if not request.user.is_authenticated:
+        return redirect("signin")
+    else:
+        return render(request, 'authentication/web_formatter.html')
 
 
 @ login_required(login_url='signin')
@@ -259,15 +362,3 @@ def NetworkList(request):
     else:
 
         return render(request, 'authentication/network_list.html')
-
-
-def Table(request):
-    #df = pd.read_csv("authentication/Host discovery/interface.txt")
-
-    with open('authentication/Host discovery/interface.txt') as f:
-        x = f.readlines()
-        print(x)
-    context = {'values': x}
-
-    return render(request, 'authentication/asset_discovery.html', context)
-    # context)

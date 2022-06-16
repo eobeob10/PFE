@@ -4,7 +4,7 @@ os.system('ls /sys/class/net | grep wlan > wlan.txt')
 with open('wlan.txt') as f:
     for i in f.readlines():
         name = os.system(
-            ' ip addr show ' + i + '|grep -Po ' + "'"+'inet \K[\d.]+')
+            ' ip addr show ' + i + '|grep -Po ' + "'"+"inet \K[\d.]+'")
 # if not then grep ip address
 os.system('ls /sys/class/net >interface.txt')
 with open('interface.txt') as fl:

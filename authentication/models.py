@@ -3,13 +3,16 @@ from django.contrib.auth.models import User
 
 
 class Scan (models.Model):
+
+    name = models.CharField(max_length=255, null=True, default='')
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     description = models.TextField()
-    updated = models.DateTimeField(auto_now=True)
+    updated = models.DateTimeField(auto_now=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
-    finished = models.DateTimeField(auto_now=True)
-    Target = models.FileField(upload_to='documents/')
-    Client = models.TextField()
+    finished = models.DateTimeField(auto_now_add=True)
+    status = models.BooleanField(default=True, blank=True)
+    Target = models.FileField(upload_to='uploads/')
+    Client = models.TextField(blank=True)
 
 
 def __str__(self):
